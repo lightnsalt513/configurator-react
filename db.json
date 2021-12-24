@@ -1,0 +1,1108 @@
+{
+  "watchProducts": {
+    "SM-R850NZDAEUA": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r850/SM-R850NZDAEUA",
+      "watchCategory": {
+        "engTxt": "galaxy watch3",
+        "localTxt": "Galaxy Watch3"
+      },
+      "watchModel": "Bronze Galaxy Watch3 Bluetooth Stainless Steel 41mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [
+        {
+          "watchSKU": "SM-R855FZDAEUA"
+        }
+      ],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_41mm_BT_Bronze_720.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_41mm_BL_Bronze_720_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 21.38,
+      "watchSize": 41,
+      "defaultStrap": "NO-SKU000",
+      "selectableStraps": [
+        "ET-SFR85SBEGEU",
+        "ET-SFR85SJEGEU",
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "NO-SKU000",
+        "ET-SLR85SAEGEU",
+        "ET-SLR85SBEGEU",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "Bluetooth",
+      "productModelName": "SM-R850",
+      "isApiCall": false
+    },
+    "SM-R855FZDAEUA": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r855/SM-R855FZDAEUA",
+      "watchCategory": {
+        "engTxt": "galaxy watch3",
+        "localTxt": "Galaxy Watch3"
+      },
+      "watchModel": "Mystic Bronze Galaxy Watch3 LTE Stainless Steel 41mm",
+      "isMainViewWatch": false,
+      "watchFamilyByConnectivity": [
+        {
+          "watchSKU": "SM-R850NZDAEUA"
+        }
+      ],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_41mm_LTE_Bronze_720.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_41mm_LTE_Bronze_720_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 21.38,
+      "watchSize": 41,
+      "defaultStrap": "NO-SKU000",
+      "selectableStraps": [
+        "ET-SFR85SBEGEU",
+        "ET-SFR85SJEGEU",
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "NO-SKU000",
+        "ET-SLR85SAEGEU",
+        "ET-SLR85SBEGEU",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "4G",
+      "productModelName": "SM-R855",
+      "isApiCall": false
+    },
+    "SM-R850NZSAEUA": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r850/SM-R850NZSAEUA",
+      "watchCategory": {
+        "engTxt": "galaxy watch3",
+        "localTxt": "Galaxy Watch3"
+      },
+      "watchModel": "Silver Galaxy Watch3 Bluetooth Stainless Steel 41mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [
+        {
+          "watchSKU": "SM-R855FZSAEUA"
+        }
+      ],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_41mm_BT_Silver_720.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_41mm_BL_Silver_720_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 21.38,
+      "watchSize": 41,
+      "defaultStrap": "ET-SLR85SBEGEU",
+      "selectableStraps": [
+        "ET-SFR85SBEGEU",
+        "ET-SFR85SJEGEU",
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "ET-SLR85SAEGEU",
+        "ET-SLR85SBEGEU",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "Bluetooth",
+      "productModelName": "SM-R850",
+      "isApiCall": false
+    },
+    "SM-R855FZSAEUA": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r855/SM-R855FZSAEUA",
+      "watchCategory": {
+        "engTxt": "galaxy watch3",
+        "localTxt": "Galaxy Watch3"
+      },
+      "watchModel": "Mystic Silver Galaxy Watch3 LTE Stainless Steel 41mm",
+      "isMainViewWatch": false,
+      "watchFamilyByConnectivity": [
+        {
+          "watchSKU": "SM-R850NZSAEUA"
+        }
+      ],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_41mm_LTE_Silver_720.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_41mm_LTE_Silver_720_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 21.38,
+      "watchSize": 41,
+      "defaultStrap": "ET-SLR85SBEGEU",
+      "selectableStraps": [
+        "ET-SFR85SBEGEU",
+        "ET-SFR85SJEGEU",
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "ET-SLR85SAEGEU",
+        "ET-SLR85SBEGEU",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "4G",
+      "productModelName": "SM-R855",
+      "isApiCall": false
+    },
+    "SM-R840NZKAEUA": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r840/SM-R840NZKAEUA",
+      "watchCategory": {
+        "engTxt": "galaxy watch3",
+        "localTxt": "Galaxy Watch3"
+      },
+      "watchModel": "The Black Galaxy Watch3 Bluetooth Stainless Steel 45mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [
+        {
+          "watchSKU": "SM-R845FZKAEUA"
+        }
+      ],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_45mm_BT_Black_720.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_45mm_BL_Black_720_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 24.17,
+      "watchSize": 45,
+      "defaultStrap": "ET-SLR84LBEGEU",
+      "selectableStraps": ["ET-SFR84LBEGEU", "ET-SFR84LJEGEU", "ET-SLR84LAEGEU", "ET-SLR84LBEGEU"],
+      "watchConnectivity": "Bluetooth",
+      "productModelName": "SM-R840",
+      "isApiCall": false
+    },
+    "SM-R845FZKAEUA": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r845/SM-R845FZKAEUA",
+      "watchCategory": {
+        "engTxt": "galaxy watch3",
+        "localTxt": "Galaxy Watch3"
+      },
+      "watchModel": "Mystic Black Galaxy Watch3 LTE Stainless Steel 45mm",
+      "isMainViewWatch": false,
+      "watchFamilyByConnectivity": [
+        {
+          "watchSKU": "SM-R840NZKAEUA"
+        }
+      ],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_45mm_LTE_Black_720.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_45mm_LTE_Black_720_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 24.17,
+      "watchSize": 45,
+      "defaultStrap": "ET-SLR84LBEGEU",
+      "selectableStraps": ["ET-SFR84LBEGEU", "ET-SFR84LJEGEU", "ET-SLR84LAEGEU", "ET-SLR84LBEGEU"],
+      "watchConnectivity": "4G",
+      "productModelName": "SM-R845",
+      "isApiCall": false
+    },
+    "SM-R840NZSAEUA": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r840/SM-R840NZSAEUA",
+      "watchCategory": {
+        "engTxt": "galaxy watch3",
+        "localTxt": "Galaxy Watch3"
+      },
+      "watchModel": "Silver Galaxy Watch3 Bluetooth Stainless Steel 45mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [
+        {
+          "watchSKU": "SM-R845FZSAEUA"
+        }
+      ],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_45mm_BT_Silver_720.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_45mm_BL_Silver_720_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 24.17,
+      "watchSize": 45,
+      "defaultStrap": "ET-SLR84LBEGEU",
+      "selectableStraps": ["ET-SFR84LBEGEU", "ET-SFR84LJEGEU", "ET-SLR84LAEGEU", "ET-SLR84LBEGEU"],
+      "watchConnectivity": "Bluetooth",
+      "productModelName": "SM-R840",
+      "isApiCall": false
+    },
+    "SM-R845FZSAEUA": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r845/SM-R845FZSAEUA",
+      "watchCategory": {
+        "engTxt": "galaxy watch3",
+        "localTxt": "Galaxy Watch3"
+      },
+      "watchModel": "Mystic Siver Galaxy Watch3 LTE Stainless Steel 45mm",
+      "isMainViewWatch": false,
+      "watchFamilyByConnectivity": [
+        {
+          "watchSKU": "SM-R840NZSAEUA"
+        }
+      ],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_45mm_LTE_Silver_720.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_45mm_LTE_Silver_720_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 24.17,
+      "watchSize": 45,
+      "defaultStrap": "ET-SLR84LBEGEU",
+      "selectableStraps": ["ET-SFR84LBEGEU", "ET-SFR84LJEGEU", "ET-SLR84LAEGEU", "ET-SLR84LBEGEU"],
+      "watchConnectivity": "4G",
+      "productModelName": "SM-R845",
+      "isApiCall": false
+    },
+    "SM-R840NTKAEUA": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r840-titanium",
+      "watchCategory": {
+        "engTxt": "galaxy watch3",
+        "localTxt": "Galaxy Watch3"
+      },
+      "watchModel": "Mystic Black Galaxy Watch3 Bluetooth Titanium 45mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_45mm_BT_Titanium_720.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/Noblesse_45mm_BL_Titanium_720_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 24.17,
+      "watchSize": 45,
+      "defaultStrap": "NO-SKU001",
+      "selectableStraps": ["ET-SFR84LBEGEU", "ET-SFR84LJEGEU", "ET-SLR84LAEGEU", "ET-SLR84LBEGEU", "NO-SKU001"],
+      "watchConnectivity": "Bluetooth",
+      "productModelName": "SM-R840",
+      "isApiCall": false
+    },
+    "SM-R830NZDABTU": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-r830/SM-R830NZDABTU",
+      "watchCategory": {
+        "engTxt": "galaxy watch active2",
+        "localTxt": "Galaxy Watch Active2"
+      },
+      "watchModel": "Pink gold Galaxy Watch Active2 Bluetooth Aluminium 40mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_40_AL_PG_BT.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_40_AL_PG_BT_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 22.2,
+      "watchSize": 40,
+      "defaultStrap": "ET-SFR82MPEGWW",
+      "selectableStraps": [
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "Bluetooth",
+      "productModelName": "SM-R830",
+      "isApiCall": false
+    },
+    "SM-R830NZKABTU": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-r830/SM-R830NZKABTU",
+      "watchCategory": {
+        "engTxt": "galaxy watch active2",
+        "localTxt": "Galaxy Watch Active2"
+      },
+      "watchModel": "Aqua black Galaxy Watch Active2 Bluetooth Aluminium 40mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_40_AL_AB_BT.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_40_AL_AB_BT_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 22.2,
+      "watchSize": 40,
+      "defaultStrap": "ET-SFR82MBEGWW",
+      "selectableStraps": [
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "Bluetooth",
+      "productModelName": "SM-R830",
+      "isApiCall": false
+    },
+    "SM-R835FSKABTU": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-r835/SM-R835FSKABTU",
+      "watchCategory": {
+        "engTxt": "galaxy watch active2",
+        "localTxt": "Galaxy Watch Active2"
+      },
+      "watchModel": "Black Galaxy Watch Active2 4G Stainless steel 40mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_40_SL_BL_LTE.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_40_SL_BL_LTE_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 22.2,
+      "watchSize": 40,
+      "defaultStrap": "ET-SLR82MBEGWW",
+      "selectableStraps": [
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "4G",
+      "productModelName": "SM-R835",
+      "isApiCall": false
+    },
+    "SM-R835FSDABTU": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-r835/SM-R835FSDABTU",
+      "watchCategory": {
+        "engTxt": "galaxy watch active2",
+        "localTxt": "Galaxy Watch Active2"
+      },
+      "watchModel": "Gold Galaxy Watch Active2 4G Stainless steel 40mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_40_SL_GL_LTE.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_40_SL_GL_LTE_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 22.2,
+      "watchSize": 40,
+      "defaultStrap": "ET-SLR82MPEGWW",
+      "selectableStraps": [
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "4G",
+      "productModelName": "SM-R835",
+      "isApiCall": false
+    },
+    "SM-R820NZDABTU": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2/SM-R820NZDABTU",
+      "watchCategory": {
+        "engTxt": "galaxy watch active2",
+        "localTxt": "Galaxy Watch Active2"
+      },
+      "watchModel": "Pink gold Galaxy Watch Active2 Bluetooth Aluminium 44mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_44_AL_PG_BT.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_44_AL_PG_BT_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 24.6,
+      "watchSize": 44,
+      "defaultStrap": "ET-SFR82MPEGWW",
+      "selectableStraps": [
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "Bluetooth",
+      "productModelName": "SM-R820",
+      "isApiCall": false
+    },
+    "SM-R820NZKABTU": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2/SM-R820NZKABTU",
+      "watchCategory": {
+        "engTxt": "galaxy watch active2",
+        "localTxt": "Galaxy Watch Active2"
+      },
+      "watchModel": "Aqua black Galaxy Watch Active2 Bluetooth Aluminium 44mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_44_AL_AB_BT.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_44_AL_AB_BT_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 24.6,
+      "watchSize": 44,
+      "defaultStrap": "ET-SFR82MBEGWW",
+      "selectableStraps": [
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "Bluetooth",
+      "productModelName": "SM-R820",
+      "isApiCall": false
+    },
+    "SM-R825FSKABTU": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-4g/SM-R825FSKABTU",
+      "watchCategory": {
+        "engTxt": "galaxy watch active2",
+        "localTxt": "Galaxy Watch Active2"
+      },
+      "watchModel": "Black Galaxy Watch Active2 4G Stainless steel 44mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_44_SL_BL_LTE.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_44_SL_BL_LTE_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 24.6,
+      "watchSize": 44,
+      "defaultStrap": "ET-SLR82MBEGWW",
+      "selectableStraps": [
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "4G",
+      "productModelName": "SM-R825",
+      "isApiCall": false
+    },
+    "SM-R825FSDABTU": {
+      "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-4g/SM-R825FSDABTU",
+      "watchCategory": {
+        "engTxt": "galaxy watch active2",
+        "localTxt": "Galaxy Watch Active2"
+      },
+      "watchModel": "Gold Galaxy Watch Active2 4G Stainless steel 44mm",
+      "isMainViewWatch": true,
+      "watchFamilyByConnectivity": [],
+      "watchImgUrl": {
+        "front": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_44_SL_GL_LTE.png",
+        "frontFrame": "/content/dam/samsung/uk/watches/mix-and-match/active2/active2_44_SL_GL_LTE_frame.png",
+        "charger": "/content/dam/samsung/uk/watches/mix-and-match/EP-OR825_001_Front_Black.png"
+      },
+      "watchfaceImgRadius": 24.6,
+      "watchSize": 44,
+      "defaultStrap": "ET-SLR82MAEGWW",
+      "selectableStraps": [
+        "ET-SFR82MBEGWW",
+        "ET-SFR82MGEGWW",
+        "ET-SFR82MSEGWW",
+        "ET-SFR82MVEGWW",
+        "ET-SFR82MPEGWW",
+        "ET-SLR82MOEGWW",
+        "ET-SLR82MBEGWW",
+        "ET-SLR82MAEGWW",
+        "ET-SLR82MPEGWW",
+        "ET-SLR82MWEGWW"
+      ],
+      "watchConnectivity": "4G",
+      "productModelName": "SM-R825",
+      "isApiCall": false
+    }
+  },
+  "strapProducts": {
+    "ET-SFR84LBEGEU": {
+      "strapCategory": {
+        "engTxt": "sport",
+        "localTxt": "sport"
+      },
+      "strapModel": "Black Sport Band",
+      "strapColorCode": ["#dadada"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "",
+          "size41": "",
+          "size44": "",
+          "size45": "/content/dam/samsung/uk/watches/mix-and-match/A03_SFR84_22mm_Black_v07_720.png"
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SFR84LBEG_Black.png"
+      },
+      "productModelName": "ET-SFR84",
+      "isApiCall": false
+    },
+    "ET-SFR85SBEGEU": {
+      "strapCategory": {
+        "engTxt": "sport",
+        "localTxt": "sport"
+      },
+      "strapModel": "Black Sport Band",
+      "strapColorCode": ["#dadada"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/A03_SFR84_20mm_Black_v07_720.png",
+          "size44": "",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SFR85SBEG_Black.png"
+      },
+      "productModelName": "ET-SFR85",
+      "isApiCall": false
+    },
+    "ET-SFR84LJEGEU": {
+      "strapCategory": {
+        "engTxt": "sport",
+        "localTxt": "sport"
+      },
+      "strapModel": "Gray Sport Band",
+      "strapColorCode": ["#f2f2f6"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "",
+          "size41": "",
+          "size44": "",
+          "size45": "/content/dam/samsung/uk/watches/mix-and-match/A04_SFR84_22mm_Gray_v06_720.png"
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SFR84LJEG_Gray.png"
+      },
+      "productModelName": "ET-SFR84",
+      "isApiCall": false
+    },
+    "ET-SFR85SJEGEU": {
+      "strapCategory": {
+        "engTxt": "sport",
+        "localTxt": "sport"
+      },
+      "strapModel": "Gray Sport Band",
+      "strapColorCode": ["#f2f2f6"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/A04_SFR84_20mm_Gray_v06_720.png",
+          "size44": "",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SFR85SJEG_Gray.png"
+      },
+      "productModelName": "ET-SFR85",
+      "isApiCall": false
+    },
+    "ET-SFR82MBEGWW": {
+      "strapCategory": {
+        "engTxt": "sport",
+        "localTxt": "sport"
+      },
+      "strapModel": "Aqua Black Sport Band",
+      "strapColorCode": ["#dadada"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MB_20mm_Black_40mm.png",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MB_20mm_Black_41mm.png",
+          "size44": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MB_20mm_Black_44mm.png",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SFR82MBEG_Black.png"
+      },
+      "productModelName": "ET-SFR82",
+      "isApiCall": false
+    },
+    "ET-SFR82MGEGWW": {
+      "strapCategory": {
+        "engTxt": "sport",
+        "localTxt": "sport"
+      },
+      "strapModel": "Vivid Green Sport Band",
+      "strapColorCode": ["#c5dad2"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MG_20mm_Green_40mm.png",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MG_20mm_Green_41mm.png",
+          "size44": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MG_20mm_Green_44mm.png",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SFR82MGEG_Green.png"
+      },
+      "productModelName": "ET-SFR82",
+      "isApiCall": false
+    },
+    "ET-SFR82MSEGWW": {
+      "strapCategory": {
+        "engTxt": "sport",
+        "localTxt": "sport"
+      },
+      "strapModel": "Cloud Silver Sport Band",
+      "strapColorCode": ["#e2dfe6"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MS_20mm_Silver_40mm.png",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MS_20mm_Silver_41mm.png",
+          "size44": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MS_20mm_Silver_44mm.png",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SFR82MSEG_Silver.png"
+      },
+      "productModelName": "ET-SFR82",
+      "isApiCall": false
+    },
+    "ET-SFR82MVEGWW": {
+      "strapCategory": {
+        "engTxt": "sport",
+        "localTxt": "sport"
+      },
+      "strapModel": "Violet Sport Band",
+      "strapColorCode": ["#dad4e1"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MV_20mm_Violet_40mm.png",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MV_20mm_Violet_41mm.png",
+          "size44": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MV_20mm_Violet_44mm.png",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SFR82MVEG_Violet.png"
+      },
+      "productModelName": "ET-SFR82",
+      "isApiCall": false
+    },
+    "ET-SFR82MPEGWW": {
+      "strapCategory": {
+        "engTxt": "sport",
+        "localTxt": "sport"
+      },
+      "strapModel": "Pink Gold Sport Band",
+      "strapColorCode": ["#f7dee4"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MP_20mm_Pink_40mm.png",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MP_20mm_Pink_41mm.png",
+          "size44": "/content/dam/samsung/uk/watches/mix-and-match/ET-SFR82MP_20mm_Pink_44mm.png",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SFR82MPEG_Pink.png"
+      },
+      "productModelName": "ET-SFR82",
+      "isApiCall": false
+    },
+    "ET-SLR84LAEGEU": {
+      "strapCategory": {
+        "engTxt": "leather",
+        "localTxt": "leather"
+      },
+      "strapModel": "Brown Leather Band",
+      "strapColorCode": ["#fbd3b3"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "",
+          "size41": "",
+          "size44": "",
+          "size45": "/content/dam/samsung/uk/watches/mix-and-match/A02_SLR84_22mm_N_brown_v03_720.png"
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SLR84LAEG_Brown.png"
+      },
+      "productModelName": "ET-SLR84",
+      "isApiCall": false
+    },
+    "ET-SLR85SAEGEU": {
+      "strapCategory": {
+        "engTxt": "leather",
+        "localTxt": "leather"
+      },
+      "strapModel": "Brown Leather Band",
+      "strapColorCode": ["#fbd3b3"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/A02_SLR84_20mm_N_brown_v03_720.png",
+          "size44": "",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SLR85SAEG_Brown.png"
+      },
+      "productModelName": "ET-SLR85",
+      "isApiCall": false
+    },
+    "ET-SLR84LBEGEU": {
+      "strapCategory": {
+        "engTxt": "leather",
+        "localTxt": "leather"
+      },
+      "strapModel": "Black Leather Band",
+      "strapColorCode": ["#dadada"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "",
+          "size41": "",
+          "size44": "",
+          "size45": "/content/dam/samsung/uk/watches/mix-and-match/A01_SLR84_22mm_black_v06_720.png"
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SLR84LBEG_Black.png"
+      },
+      "productModelName": "ET-SLR84",
+      "isApiCall": false
+    },
+    "ET-SLR85SBEGEU": {
+      "strapCategory": {
+        "engTxt": "leather",
+        "localTxt": "leather"
+      },
+      "strapModel": "Black Leather Band",
+      "strapColorCode": ["#dadada"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/A01_SLR84_20mm_black_v06_720.png",
+          "size44": "",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SLR85SBEG_Black.png"
+      },
+      "productModelName": "ET-SLR85",
+      "isApiCall": false
+    },
+    "ET-SLR82MOEGWW": {
+      "strapCategory": {
+        "engTxt": "leather",
+        "localTxt": "leather"
+      },
+      "strapModel": "Orange Leather Band",
+      "strapColorCode": ["#ffddd5"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MO_20mm_Orange_40mm.png",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MO_20mm_Orange_41mm.png",
+          "size44": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MO_20mm_Orange_44mm.png",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SLR82MOEG_Orange.png"
+      },
+      "productModelName": "ET-SLR82",
+      "isApiCall": false
+    },
+    "ET-SLR82MBEGWW": {
+      "strapCategory": {
+        "engTxt": "leather",
+        "localTxt": "leather"
+      },
+      "strapModel": "Black Leather Band",
+      "strapColorCode": ["#dadada"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MB_20mm_Black_40mm.png",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MB_20mm_Black_41mm.png",
+          "size44": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MB_20mm_Black_44mm.png",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SLR82MBEG_Black.png"
+      },
+      "productModelName": "ET-SLR82",
+      "isApiCall": false
+    },
+    "ET-SLR82MAEGWW": {
+      "strapCategory": {
+        "engTxt": "leather",
+        "localTxt": "leather"
+      },
+      "strapModel": "Brown Leather Band",
+      "strapColorCode": ["#fbd3b3"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MA_20mm_Brown_40mm.png",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MA_20mm_Brown_41mm.png",
+          "size44": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MA_20mm_Brown_44mm.png",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SLR82MAEG_Brown.png"
+      },
+      "productModelName": "ET-SLR82",
+      "isApiCall": false
+    },
+    "ET-SLR82MPEGWW": {
+      "strapCategory": {
+        "engTxt": "leather",
+        "localTxt": "leather"
+      },
+      "strapModel": "Pink Leather Band",
+      "strapColorCode": ["#f7dee4"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MP_20mm_Pink_40mm.png",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MP_20mm_Pink_41mm.png",
+          "size44": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MP_20mm_Pink_44mm.png",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SLR82MPEG_Pink.png"
+      },
+      "productModelName": "ET-SLR82",
+      "isApiCall": false
+    },
+    "ET-SLR82MWEGWW": {
+      "strapCategory": {
+        "engTxt": "leather",
+        "localTxt": "leather"
+      },
+      "strapModel": "White Leather Band",
+      "strapColorCode": ["#ffffff"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MW_20mm_White_40mm.png",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MW_20mm_White_41mm.png",
+          "size44": "/content/dam/samsung/uk/watches/mix-and-match/ET-SLR82MW_20mm_White_44mm.png",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/ET-SLR82MWEG_White.png"
+      },
+      "productModelName": "ET-SLR82",
+      "isApiCall": false
+    },
+    "NO-SKU000": {
+      "strapCategory": {
+        "engTxt": "leather",
+        "localTxt": "leather"
+      },
+      "strapModel": "Pink Leather Band",
+      "strapColorCode": ["#f7dee4"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "",
+          "size41": "/content/dam/samsung/uk/watches/mix-and-match/A02_SLR84_20mm_brown_v02_720.png",
+          "size44": "",
+          "size45": ""
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/NO-SKU000_Pink.png"
+      },
+      "productModelName": "",
+      "isApiCall": true
+    },
+    "NO-SKU001": {
+      "strapCategory": {
+        "engTxt": "titanium",
+        "localTxt": "titanium"
+      },
+      "strapModel": "Black Titanium Band",
+      "strapColorCode": ["#dadada"],
+      "strapImgUrl": {
+        "front": {
+          "size40": "",
+          "size41": "",
+          "size44": "",
+          "size45": "/content/dam/samsung/uk/watches/mix-and-match/F01_Titanium_Metal_22mm_v01_720.png"
+        },
+        "summary": "/content/dam/samsung/uk/watches/mix-and-match/summary-bands/NO-SKU001_Black.png"
+      },
+      "productModelName": "",
+      "isApiCall": true
+    }
+  },
+  "watchface": {
+    "galaxy watch3": {
+      "faceList": [
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_Acentric.png",
+          "imgAlt": "The hour hand, minute hand, date and steps are presented in red and gray with dark gray background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_activity_sparkles.png",
+          "imgAlt": "The date and time are presented in green and white with sparkling black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_analog_dashboard.png",
+          "imgAlt": "The hour hand, minute hand, weather and battery are presented in blue and white and step icon presented in green with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_analog_utility.png",
+          "imgAlt": "The date, weather, hour hand, minute hand and steps are presented in yellow and white with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_Basic_dashboard.png",
+          "imgAlt": "The time, weather, battery level and number of steps are presented in white with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_breathe.png",
+          "imgAlt": "The hour hand and minute hand are presented in white and sky blue with active breathe background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_Casual_minimalist.png",
+          "imgAlt": "The hour hand and minute hand are presented in dark gray and yellow with black background that has bpm in it."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_Classic_adventurer.png",
+          "imgAlt": "The hour hand, minute hand and numbers are presented in white and date is presented in black with black background that has steps icon in it."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_digital_dashboard.png",
+          "imgAlt": "The date, time, and weather are presented in pink and white with black background that has big pink ring which indicates battery level, steps and time."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_large.png",
+          "imgAlt": "The date, time and battery level are presented in white with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_live_wallpaper.png",
+          "imgAlt": "The date and time are presented in white with live wall paper background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_Modern_minimalist.png",
+          "imgAlt": "The hour hand, minute hand and battery level are presented in rose gold and white with black background effect that has bpm in it."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_myday.png",
+          "imgAlt": "The hour hand, the minute hand, date and battery level are presented in white and red, with black background effect"
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_myphoto.png",
+          "imgAlt": "The time is presented in white with big wall paper background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_mystyle.png",
+          "imgAlt": "The time is presented in white with yellow and white circles are placed in black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_Quad_hive.png",
+          "imgAlt": "The hour hand, minute hand, date, battery level, weather, steps, and messages are presented in white and yellow with dark gray background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_Roaming_clock.png",
+          "imgAlt": "The time and date are presented in blue and the location is presented in white with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3_weather_center.png",
+          "imgAlt": "The hour hand, minute hand, weather and location are presented in white with dribbling water style effect in purple background."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3MR_frontier.png",
+          "imgAlt": "The date, minute hand and the hour hand are presented in white and red with dark gray background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3MR_health_dashboard.png",
+          "imgAlt": "The date, time, and weather are presented in white and bpm presented in blue, and moderate presented in purple with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3MR_neon_digital.png",
+          "imgAlt": "The date, time, weather and steps are presented in yellow and white with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3MR_pixel_heart.png",
+          "imgAlt": "The time and bpm are presented in white with black background that has big pixel heart in it."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3MR_premium_analog.png",
+          "imgAlt": "The hour hand, minute hand, date, bpm, location, and stopwatch are presented in white and red with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch3MR_simple_analog.png",
+          "imgAlt": "The hour hand, minute hand and weather are presented in white and red and bpm presented in gray with black background effect."
+        }
+      ]
+    },
+    "galaxy watch active2": {
+      "faceList": [
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_activity_sparkles.png",
+          "imgAlt": "The date and time are presented in green and white with sparkling black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_dashboard.png",
+          "imgAlt": "The date, time, location, steps, weather and battery level are presented in white with black background effect"
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_digital_neon.png",
+          "imgAlt": "The date, time, weather and steps are presented in yellow and white with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_frontier.png",
+          "imgAlt": "The date, the minute hand and the hour hand are presented in white and red with dark gray background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_health_dashboard.png",
+          "imgAlt": "The date, time, and weather are presented in white and bpm presented in blue, and moderate presented in purple with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_large.png",
+          "imgAlt": "The date, time and battery level are presented in white with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_livewallpaper.png",
+          "imgAlt": "The date and time are presented in white with big flower wall paper in black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_myday.png",
+          "imgAlt": "The hour hand, the minute hand, date and battery level are presented in white and red, with black background effect"
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_mystyle.png",
+          "imgAlt": "The time is presented in white with yellow and white circles are placed in black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_mystyle_expired.png",
+          "imgAlt": "The hour hand and minute hand are presented in white with pink gradation background."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_pixel_heart.png",
+          "imgAlt": "The time and bpm are presented in white with black background that has big pixel heart in it."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_premium_analog.png",
+          "imgAlt": "The hour hand, minute hand, date, bpm, location, and stopwatch are presented in white and red with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_Roaming_clock.png",
+          "imgAlt": "The time and date are presented in blue and the location is presented in white with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_simple_analog.png",
+          "imgAlt": "The hour hand, minute hand and weather are presented in white and red and bpm presented in gray with black background effect."
+        },
+        {
+          "imgUrl": "/content/dam/samsung/uk/watches/mix-and-match/watchface/galaxy_watch_active2_simple_basic_2.png",
+          "imgAlt": "The hour hand, minute hand and weather are presented in white and red with black background effect."
+        }
+      ]
+    }
+  }
+}
