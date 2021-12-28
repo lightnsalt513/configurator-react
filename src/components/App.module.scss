@@ -1,0 +1,138 @@
+@import 'styles/globalvars/globalvars.scss';
+
+$component-name: 'app';
+
+.#{$component-name} {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  background: $backgroundDefault;
+  color: $colorDefault;
+  &__bg {
+    @include absolute-full;
+    opacity: 0;
+    transition: opacity 0.4s;
+    &-default {
+      @include absolute-full;
+      background: {
+        repeat: no-repeat;
+        position: 0 0;
+      }
+      transition: background-color 0.8s;
+      transition-delay: 0.6s;
+    }
+    &-second {
+      @include absolute-full;
+      opacity: 0;
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: $minHeight + px;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 11;
+    height: 30px;
+    margin: 0 50px;
+    padding-top: 20px;
+  }
+  &__title {
+    font-family: $fontPrimary;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 39px;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  &__body {
+    position: relative;
+    flex-grow: 1;
+    padding-top: calc((20 / #{$minHeight}) * 100vh);
+    padding-bottom: calc((66 / #{$minHeight}) * 100vh);
+    // pointer-events: none;
+  }
+  &__cta {
+    position: absolute;
+    top: 10px;
+    right: 26px;
+    z-index: 12;
+    height: 30px;
+    &-back,
+    &-experience-close {
+      position: absolute;
+      top: 0;
+      right: -3px;
+      bottom: 0;
+      display: block;
+      width: 25px;
+      height: 25px;
+      margin: auto 0;
+      color: #000;
+      &:before,
+      &:after {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 1px;
+        height: 24px;
+        margin-left: 13px;
+        background: #707070;
+        content: '';
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+    &-back {
+      display: none;
+    }
+    &-experience-close {
+      display: none;
+    }
+  }
+
+  &:global(.is-initialized) {
+    .#{$component-name}__bg {
+      opacity: 1;
+    }
+    .#{$component-name}__cta-close {
+      &-back {
+        display: block;
+      }
+    }
+  }
+
+  &:global(.theme-white) {
+    background: #fff;
+    .#{$component-name} {
+      &__bg {
+        display: none;
+      }
+      // &__product-connectivity li.is-selected a {
+      //   background: #f6f4f4;
+      // }
+    }
+  }
+
+  &:global(.theme-black) {
+    background: #313131;
+    color: #fff;
+    .#{$component-name} {
+      &__bg {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import 'styles/globalvars/globalvars.scss';
+
+$component-name: 'subnav';
+
+.#{$component-name} {
+  position: relative;
+  margin-top: 20px;
+  height: 40px;
+  // opacity: 0;
+  ul {
+    overflow-x: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: -2px 0;
+    // opacity: 0;
+    // visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    scrollbar-width: none; // IE
+    -ms-overflow-style: none; // FF
+    &::-webkit-scrollbar {
+      display: none; // Chrome
+    }
+    &::before,
+    &::after {
+      flex: 1;
+      content: '';
+    }
+    &:global(.is-active) {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  li {
+    padding: 2px 0;
+    white-space: nowrap;
+    &:global(.is-selected) {
+      a {
+        border-color: $colorDefault;
+        transition: border-color 0.5s;
+      }
+    }
+  }
+  a {
+    position: relative;
+    display: block;
+    padding: 3px 30px 0;
+    border: 1px solid transparent;
+    border-radius: 99em;
+    color: inherit;
+    font-family: $fontPrimary;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 35px;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: border-color 0.5s;
+  }
+}

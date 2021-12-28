@@ -1,0 +1,51 @@
+@import 'styles/globalvars/globalvars.scss';
+
+$component-name: 'nav';
+
+.#{$component-name} {
+  display: flex;
+  justify-content: center;
+  // opacity: 0;
+  &__inner {
+    position: relative;
+  }
+  &__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    &-active {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background: $colorDefault;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    margin: 0 35px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    display: block;
+    position: relative;
+    padding-bottom: 5px;
+    color: inherit;
+    font-family: $fontPrimary;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+}

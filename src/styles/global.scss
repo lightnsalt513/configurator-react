@@ -1,0 +1,13 @@
+@import 'styles/globalvars/globalvars.scss';
+
+// Reset
+@import '../../node_modules/reset-css/reset.css';
+
+.blind {
+  @include hidden;
+}
+
+// Fonts
+html {
+  font-family: $fontDefault;
+}
