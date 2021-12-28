@@ -1,13 +1,7 @@
 import { Dispatch } from 'redux';
-import {
-  StepDispatchType,
-  StepType,
-  StepNameType,
-  STEP_CHANGE,
-  STEP_ADD_MENU,
-} from './StepsActionTypes';
+import { StepDispatchType, StepType, STEP_CHANGE, STEP_ADD_MENU } from './StepsActionTypes';
 
-export const changeStep = (name: StepNameType) => (dispatch: Dispatch<StepDispatchType>) => {
+export const changeStep = (name: StepType['name']) => (dispatch: Dispatch<StepDispatchType>) => {
   dispatch({
     type: STEP_CHANGE,
     payload: name,
@@ -15,7 +9,7 @@ export const changeStep = (name: StepNameType) => (dispatch: Dispatch<StepDispat
 };
 
 export const addStepMenus =
-  (name: StepNameType, menus: StepType['menus']) => (dispatch: Dispatch<StepDispatchType>) => {
+  (name: StepType['name'], menus: StepType['menus']) => (dispatch: Dispatch<StepDispatchType>) => {
     dispatch({
       type: STEP_ADD_MENU,
       payload: {

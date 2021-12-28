@@ -1,33 +1,65 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 import s from './App.module.scss';
 import { MainNav } from 'components/MainNav/MainNav';
 import { SubNav } from 'components/SubNav/SubNav';
 import { ProductSlider } from 'components/ProductSlider/ProductSlider';
 import { ThemePicker } from './ThemePicker/ThemePicker';
-import { RootReducerType } from 'state/reducers';
+import { fetchProducts } from 'state/actions/ProductsActions';
+import { useSelectorTyped } from 'helpers/useSelectorType';
+import { useReduxDispatch } from 'helpers/useReduxDispatch';
+import { addStepMenus } from 'state/actions/StepsActions';
 
 export interface IState {
-  step: 'MODEL' | 'STRAP';
-  submenus: string[];
   theme: 'color' | 'white' | 'black';
   bg: string;
-  selectedWatch: string;
-  selectedStrap: string;
-  selectedItemIdx: number;
 }
 
 export const App: React.FC = () => {
+  const dispatch = useReduxDispatch();
+
   const [theme, setTheme] = useState<IState['theme']>('color');
 
-  const stepState = useSelector((state: RootReducerType) => state.steps);
+  const productsState = useSelectorTyped((state) => state.products);
+  const stepState = useSelectorTyped((state) => state.steps);
 
   useEffect(() => {
-    //
+    dispatch(fetchProducts()).then((res) => {
+      let watchMenus: { [key: string]: string } = {};
+      let strapMenus: { [key: string]: string } = {};
+
+      for (let key in res.watches) {
+        let categoryName = res.watches[key].category.localTxt;
+        categoryName = categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
+        if (watchMenus[categoryName]) continue;
+        watchMenus[categoryName] = categoryName;
+      }
+
+      for (let key in res.straps) {
+        let categoryName = res.straps[key].category.localTxt;
+        categoryName = categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
+        if (strapMenus[categoryName]) continue;
+        strapMenus[categoryName] = categoryName;
+      }
+
+      let watchMenusArray = Object.keys(watchMenus);
+      let strapMenusArray = Object.keys(strapMenus);
+
+      dispatch(addStepMenus('MODEL', watchMenusArray));
+      dispatch(addStepMenus('STRAP', strapMenusArray));
+    });
+
     return () => {
       // cleanup;
     };
   }, []);
+
+  useEffect(() => {
+    console.log(productsState);
+    console.log(stepState);
+    return () => {
+      // cleanup;
+    };
+  }, [productsState]);
 
   return (
     <div

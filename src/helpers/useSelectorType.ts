@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
-import { RootReducerType } from 'state/reducers';
+import { RootStateType } from 'state/reducers';
 
-export function useSelectorTyped<T>(fn: (state: RootReducerType) => T): T {
+export function useSelectorTyped<T>(fn: (state: RootStateType) => T): T {
   return useSelector(fn);
 }
