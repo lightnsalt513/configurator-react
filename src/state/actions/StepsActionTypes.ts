@@ -3,17 +3,23 @@ export const STEP_ADD_MENU = 'STEP_ADD_MENU';
 
 export type StepNameType = 'MODEL' | 'STRAP';
 
+interface MenuType {
+  name: string;
+  idx: number;
+}
+
 export type StepType = {
   name: StepNameType;
-  menus?: string[];
+  menus?: MenuType[];
+  productOrder?: string[];
 };
 
-export interface stepAddMenusDispatch {
+interface stepAddMenusDispatch {
   type: typeof STEP_ADD_MENU;
   payload: StepType;
 }
 
-export interface stepChangeDispatch {
+interface stepChangeDispatch {
   type: typeof STEP_CHANGE;
   payload: StepNameType;
 }

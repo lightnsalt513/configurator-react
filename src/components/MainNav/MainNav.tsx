@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { gsap } from 'gsap';
 import s from './MainNav.module.scss';
-import { changeStep } from 'state/actions/StepsActions';
+import { addStepMenus, changeStep } from 'state/actions/StepsActions';
 import { StepNameType } from 'state/actions/StepsActionTypes';
 import { useSelectorTyped } from 'helpers/useSelectorType';
 
@@ -11,7 +11,7 @@ export const MainNav: React.FC = () => {
   const lineRef = useRef<HTMLDivElement>(null);
 
   const dispatch = useDispatch();
-  const currentStep = useSelectorTyped((state) => state.steps.currentStep.name);
+  const currentStep = useSelectorTyped((state) => state.steps.currentStep);
 
   useEffect(() => {
     let targetMenu = menusRef.current[0];
@@ -39,6 +39,12 @@ export const MainNav: React.FC = () => {
     e.preventDefault();
     const newStep = e.currentTarget.getAttribute('data-step') as StepNameType;
     if (newStep && currentStep !== newStep) {
+      if (
+        e.currentTarget.parentElement?.parentElement?.firstElementChild !==
+        e.currentTarget.parentElement
+      ) {
+        dispatch(addStepMenus(newStep));
+      }
       dispatch(changeStep(newStep));
     }
   };

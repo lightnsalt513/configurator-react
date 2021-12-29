@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import s from './SubNav.module.scss';
 import { useSelectorTyped } from 'helpers/useSelectorType';
+import { changeSelectedWatch } from 'state/actions/ProductsActions';
 
 export const SubNav: React.FC = () => {
-  const menus = useSelectorTyped((state) => state.steps.currentStep.menus);
+  const currentStep = useSelectorTyped((state) => state.steps.currentStep);
+  const steps = useSelectorTyped((state) => state.steps.steps);
+  let menus = steps.find((step) => step.name === currentStep)?.menus;
+
   const [selected, setSelected] = useState(0);
+
+  useEffect(() => {
+    menus = steps.find((step) => step.name === currentStep)?.menus;
+    console.log(steps);
+    return () => {
+      // cleanup;
+    };
+  }, [currentStep, steps]);
 
   const onClickMenu = (e: React.MouseEvent<HTMLLIElement>): void => {
     e.preventDefault();
@@ -25,8 +37,8 @@ export const SubNav: React.FC = () => {
                 className={i === selected ? 'is-selected' : ''}
                 role="presentation"
               >
-                <a href="none" role="button" data-view-idx="{dataViewIdx}">
-                  {menu}
+                <a href="none" role="button" data-view-idx={menu.idx}>
+                  {menu.name}
                 </a>
               </li>
             );

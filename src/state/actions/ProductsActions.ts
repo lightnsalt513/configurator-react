@@ -1,15 +1,19 @@
 import { Dispatch } from 'redux';
 import data from 'db.json';
 import {
-  ProductsDispatchType,
+  FetchProductsDispatchType,
   FETCH_PRODUCTS_FAIL,
   FETCH_PRODUCTS_SUCCESS,
   ProductsType,
+  CHANGE_WATCH,
+  CHANGE_STRAP,
+  ChangeWatchDispatchType,
+  ChangeStrapDispatchType,
 } from './ProductsActionTypes';
 
 export const fetchProducts =
   () =>
-  async (dispatch: Dispatch<ProductsDispatchType>): Promise<ProductsType> => {
+  async (dispatch: Dispatch<FetchProductsDispatchType>): Promise<ProductsType> => {
     return new Promise((mainResolve, mainReject) => {
       let productPromise: Promise<ProductsType> = new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -42,5 +46,21 @@ export const fetchProducts =
           });
           mainReject(err);
         });
+    });
+  };
+
+export const changeSelectedWatch =
+  (sku: string) => (dispatch: Dispatch<ChangeWatchDispatchType>) => {
+    dispatch({
+      type: CHANGE_WATCH,
+      payload: sku,
+    });
+  };
+
+export const changeSelectedStrap =
+  (sku: string) => (dispatch: Dispatch<ChangeStrapDispatchType>) => {
+    dispatch({
+      type: CHANGE_STRAP,
+      payload: sku,
     });
   };

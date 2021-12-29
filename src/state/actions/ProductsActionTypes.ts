@@ -1,7 +1,9 @@
 export const FETCH_PRODUCTS_SUCCESS = 'FETCH_PRODUCTS_SUCCESS';
 export const FETCH_PRODUCTS_FAIL = 'FETCH_PRODUCTS_FAIL';
+export const CHANGE_WATCH = 'CHANGE_WATCH';
+export const CHANGE_STRAP = 'CHANGE_STRAP';
 
-export type WatchType = {
+type WatchType = {
   pdUrl: string;
   category: {
     engTxt: string;
@@ -25,7 +27,7 @@ export type WatchType = {
   productModelName: string;
 };
 
-export type StrapType = {
+type StrapType = {
   category: {
     engTxt: string;
     localTxt: string;
@@ -49,13 +51,29 @@ export type ProductsType = {
   straps: { [key: string]: StrapType };
 };
 
-export interface fetchProductsSucessDispatch {
+interface fetchProductsSucessDispatch {
   type: typeof FETCH_PRODUCTS_SUCCESS;
   payload: ProductsType;
 }
 
-export interface fetchProductsFailDispatch {
+interface fetchProductsFailDispatch {
   type: typeof FETCH_PRODUCTS_FAIL;
 }
 
-export type ProductsDispatchType = fetchProductsSucessDispatch | fetchProductsFailDispatch;
+export type FetchProductsDispatchType = fetchProductsSucessDispatch | fetchProductsFailDispatch;
+
+export interface ChangeWatchDispatchType {
+  type: typeof CHANGE_WATCH;
+  payload: string;
+}
+
+export interface ChangeStrapDispatchType {
+  type: typeof CHANGE_STRAP;
+  payload: string;
+}
+
+export type ProductsActionType =
+  | fetchProductsSucessDispatch
+  | fetchProductsFailDispatch
+  | ChangeWatchDispatchType
+  | ChangeStrapDispatchType;

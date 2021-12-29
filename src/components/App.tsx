@@ -4,7 +4,11 @@ import { MainNav } from 'components/MainNav/MainNav';
 import { SubNav } from 'components/SubNav/SubNav';
 import { ProductSlider } from 'components/ProductSlider/ProductSlider';
 import { ThemePicker } from './ThemePicker/ThemePicker';
-import { fetchProducts } from 'state/actions/ProductsActions';
+import {
+  changeSelectedStrap,
+  changeSelectedWatch,
+  fetchProducts,
+} from 'state/actions/ProductsActions';
 import { useSelectorTyped } from 'helpers/useSelectorType';
 import { useReduxDispatch } from 'helpers/useReduxDispatch';
 import { addStepMenus } from 'state/actions/StepsActions';
@@ -17,35 +21,18 @@ export interface IState {
 export const App: React.FC = () => {
   const dispatch = useReduxDispatch();
 
-  const [theme, setTheme] = useState<IState['theme']>('color');
-
   const productsState = useSelectorTyped((state) => state.products);
   const stepState = useSelectorTyped((state) => state.steps);
 
+  const [theme, setTheme] = useState<IState['theme']>('color');
+
   useEffect(() => {
     dispatch(fetchProducts()).then((res) => {
-      let watchMenus: { [key: string]: string } = {};
-      let strapMenus: { [key: string]: string } = {};
-
-      for (let key in res.watches) {
-        let categoryName = res.watches[key].category.localTxt;
-        categoryName = categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
-        if (watchMenus[categoryName]) continue;
-        watchMenus[categoryName] = categoryName;
-      }
-
-      for (let key in res.straps) {
-        let categoryName = res.straps[key].category.localTxt;
-        categoryName = categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
-        if (strapMenus[categoryName]) continue;
-        strapMenus[categoryName] = categoryName;
-      }
-
-      let watchMenusArray = Object.keys(watchMenus);
-      let strapMenusArray = Object.keys(strapMenus);
-
-      dispatch(addStepMenus('MODEL', watchMenusArray));
-      dispatch(addStepMenus('STRAP', strapMenusArray));
+      const watch = Object.keys(res.watches)[0];
+      const strap = res.watches[watch].defaultStrap;
+      dispatch(addStepMenus('MODEL'));
+      dispatch(changeSelectedWatch(watch));
+      dispatch(changeSelectedStrap(strap));
     });
 
     return () => {
@@ -54,11 +41,8 @@ export const App: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    console.log(productsState);
-    console.log(stepState);
-    return () => {
-      // cleanup;
-    };
+    // console.log(productsState);
+    // console.log(stepState);
   }, [productsState]);
 
   return (
@@ -79,9 +63,9 @@ export const App: React.FC = () => {
         </div>
         <div className={s.app__body}>
           <MainNav />
-          <SubNav />
-          <ProductSlider />
-          Step: {stepState.currentStep.name} <br />
+          {productsState.initialized && <SubNav />}
+          {productsState.initialized && <ProductSlider />}
+          Step: {stepState.currentStep} <br />
           Theme: {theme}
         </div>
         <ThemePicker theme={theme} setTheme={setTheme} />
