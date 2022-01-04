@@ -10,7 +10,7 @@ $component-name: 'app';
   color: $colorDefault;
   &__bg {
     @include absolute-full;
-    opacity: 0;
+    // opacity: 0;
     transition: opacity 0.4s;
     &-default {
       @include absolute-full;

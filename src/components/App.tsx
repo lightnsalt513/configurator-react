@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import s from './App.module.scss';
 import { MainNav } from 'components/MainNav/MainNav';
 import { SubNav } from 'components/SubNav/SubNav';
@@ -12,10 +12,13 @@ import {
 import { useSelectorTyped } from 'helpers/useSelectorType';
 import { useReduxDispatch } from 'helpers/useReduxDispatch';
 import { addStepMenus } from 'state/actions/StepsActions';
+import { changeIndexAndSelectedProduct } from 'state/actions/MultipleActions';
 
 export interface IState {
   theme: 'color' | 'white' | 'black';
-  bg: string;
+  bg: string[];
+  defaultIdx: number;
+  isIdxReset: boolean;
 }
 
 export const App: React.FC = () => {
@@ -23,27 +26,56 @@ export const App: React.FC = () => {
 
   const productsState = useSelectorTyped((state) => state.products);
   const stepState = useSelectorTyped((state) => state.steps);
+  const modelSliderRef = useRef(null);
 
   const [theme, setTheme] = useState<IState['theme']>('color');
+  const [bg, setBg] = useState<IState['bg']>(['#fff']);
+  const [defaultIdx, setDefaultIdx] = useState<IState['defaultIdx']>(0);
+  const [isIdxReset, setIsIdxReset] = useState<IState['isIdxReset']>(false);
 
   useEffect(() => {
     dispatch(fetchProducts()).then((res) => {
-      const watch = Object.keys(res.watches)[0];
+      const watch = Object.keys(res.watches)[defaultIdx];
       const strap = res.watches[watch].defaultStrap;
-      dispatch(addStepMenus('MODEL'));
+      dispatch(addStepMenus(stepState.currentStep));
       dispatch(changeSelectedWatch(watch));
       dispatch(changeSelectedStrap(strap));
     });
-
-    return () => {
-      // cleanup;
-    };
   }, []);
 
   useEffect(() => {
-    // console.log(productsState);
-    // console.log(stepState);
-  }, [productsState]);
+    if (productsState.products && productsState.selectedStrap) {
+      const strap = productsState.selectedStrap.sku;
+      const colorCode = productsState.products.straps[strap].colorCode;
+      setBg(colorCode);
+    }
+  }, [productsState.products, productsState.selectedStrap]);
+
+  useEffect(() => {
+    setIsIdxReset(false);
+    if (stepState.currentStep === 'MODEL') {
+      setDefaultIdx(0);
+      dispatch(changeIndexAndSelectedProduct(0));
+
+      if (!modelSliderRef.current) return;
+      (modelSliderRef.current as HTMLDivElement).style.display = '';
+    } else {
+      const defaultStrapSku = productsState.selectedWatch?.data.defaultStrap;
+      const idx = defaultStrapSku
+        ? stepState.steps
+            .find((step) => step.name === 'STRAP')
+            ?.productOrder?.indexOf(defaultStrapSku)
+        : null;
+      if (idx) {
+        setDefaultIdx(idx);
+        dispatch(changeIndexAndSelectedProduct(idx));
+      }
+
+      if (!modelSliderRef.current) return;
+      (modelSliderRef.current as HTMLDivElement).style.display = 'none';
+    }
+    setIsIdxReset(true);
+  }, [stepState.currentStep]);
 
   return (
     <div
@@ -52,8 +84,8 @@ export const App: React.FC = () => {
       }
     >
       <div className={s.app__bg}>
-        <span className={s['app__bg-default']}></span>
-        <span className={s['app__bg-second']}></span>
+        <span className={s['app__bg-default']} style={{ background: bg[0] }}></span>
+        <span className={s['app__bg-second']} style={{ background: bg[1] }}></span>
       </div>
       <div className={s.app__inner}>
         <div className={s.app__head}>
@@ -63,8 +95,17 @@ export const App: React.FC = () => {
         </div>
         <div className={s.app__body}>
           <MainNav />
-          {productsState.initialized && <SubNav />}
-          {productsState.initialized && <ProductSlider />}
+          {productsState.initialized && (
+            <>
+              <SubNav />
+              <div ref={modelSliderRef}>
+                <ProductSlider type="MODEL" defaultIdx={defaultIdx} />
+              </div>
+              {stepState.currentStep === 'STRAP' && isIdxReset && (
+                <ProductSlider type="STRAP" defaultIdx={defaultIdx} />
+              )}
+            </>
+          )}
           Step: {stepState.currentStep} <br />
           Theme: {theme}
         </div>

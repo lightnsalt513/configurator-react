@@ -1,5 +1,11 @@
 import { Dispatch } from 'redux';
-import { StepDispatchType, StepType, STEP_CHANGE, STEP_ADD_MENU } from './StepsActionTypes';
+import {
+  StepDispatchType,
+  StepType,
+  STEP_CHANGE,
+  STEP_ADD_MENU,
+  STEP_CHANGE_IDX,
+} from './StepsActionTypes';
 import { RootStateType } from 'state/reducers';
 
 export const changeStep = (name: StepType['name']) => (dispatch: Dispatch<StepDispatchType>) => {
@@ -31,7 +37,7 @@ export const addStepMenus =
             menuList.push(categoryName);
             itemList[menuList.length - 1] = [];
           }
-          if (menuList.length) {
+          if (menuList.length && watchData[key].isMainView) {
             itemList[menuList.length - 1].push(key);
           }
         }
@@ -55,7 +61,7 @@ export const addStepMenus =
         productOrder: watchList,
       };
     } else {
-      const selectedWatch = state.selectedWatch;
+      const selectedWatch = state.selectedWatch?.sku;
       const strapData = state?.products?.straps;
       let strapList = selectedWatch && state.products?.watches[selectedWatch].selectableStraps;
       let menuList: string[] = [];
@@ -102,3 +108,10 @@ export const addStepMenus =
       payload: stepObj,
     });
   };
+
+export const changeCurrentIndex = (idx: number) => (dispatch: Dispatch<StepDispatchType>) => {
+  dispatch({
+    type: STEP_CHANGE_IDX,
+    payload: idx,
+  });
+};

@@ -5,15 +5,18 @@ import {
   StepType,
   StepDispatchType,
   StepNameType,
+  STEP_CHANGE_IDX,
 } from 'state/actions/StepsActionTypes';
 
 interface StepStateType {
   currentStep: StepNameType;
+  currentIdx: number;
   steps: StepType[];
 }
 
 const initialState: StepStateType = {
   currentStep: 'MODEL',
+  currentIdx: 0,
   steps: [{ name: 'MODEL' }, { name: 'STRAP' }],
 };
 
@@ -34,6 +37,8 @@ export const reducer: Reducer<StepStateType, StepDispatchType> = (state = initia
         }
       });
       return { ...state, steps: updatedSteps };
+    case STEP_CHANGE_IDX:
+      return { ...state, currentIdx: action.payload };
     default:
       return state;
   }

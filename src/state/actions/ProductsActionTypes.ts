@@ -3,7 +3,7 @@ export const FETCH_PRODUCTS_FAIL = 'FETCH_PRODUCTS_FAIL';
 export const CHANGE_WATCH = 'CHANGE_WATCH';
 export const CHANGE_STRAP = 'CHANGE_STRAP';
 
-type WatchType = {
+export type WatchType = {
   pdUrl: string;
   category: {
     engTxt: string;
@@ -27,7 +27,7 @@ type WatchType = {
   productModelName: string;
 };
 
-type StrapType = {
+export type StrapType = {
   category: {
     engTxt: string;
     localTxt: string;
@@ -36,10 +36,7 @@ type StrapType = {
   colorCode: string[];
   imgUrl: {
     front: {
-      size40: string;
-      size41: string;
-      size44: string;
-      size45: string;
+      [key: string]: string;
     };
     summary: string;
   };
