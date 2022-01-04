@@ -196,10 +196,31 @@ $component-name: 'slider';
       width: calc(56 / #{$minHeight} * 100vh);
       content: '';
     }
-    :global(.el-btn-goto) {
+    .el-btn-goto {
       display: none;
       color: #005fa3;
       font-size: 15px;
+      text-decoration: none;
+      &:global(.is-active) {
+        display: block;
+      }
+    }
+  }
+  &__product {
+    position: relative;
+    margin-top: 34px;
+    // opacity: 0;
+  }
+  &__cta {
+    margin-top: 18px;
+    text-align: center;
+    // opacity: 0;
+    .el-cta-choose {
+      @include cta-pill;
+      min-width: 124px;
+      padding: 0 27px;
+      line-height: 39px;
+      @include customFocus;
     }
   }
 }

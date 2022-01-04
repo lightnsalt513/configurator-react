@@ -8,8 +8,8 @@ import s from './ProductSlider.module.scss';
 import { useSelectorTyped } from 'helpers/useSelectorType';
 import { useReduxDispatch } from 'helpers/useReduxDispatch';
 import { changeIndexAndSelectedProduct } from 'state/actions/MultipleActions';
-import { changeSelectedStrap, changeSelectedWatch } from 'state/actions/ProductsActions';
-import ProductInfo from './ProductInfo/ProductInfo';
+import { ProductInfo } from './ProductInfo/ProductInfo';
+import { StrapType, WatchType } from 'state/actions/ProductsActionTypes';
 
 interface IProps {
   type: string;
@@ -24,15 +24,26 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
   const stepObj = useSelectorTyped((state) => state.steps.steps).find((step) => step.name === type);
   const productList = stepObj?.productOrder;
   const selectedWatchObj = useSelectorTyped((state) => state.products.selectedWatch);
+  const defaultStrap = selectedWatchObj?.data.defaultStrap;
   const stateIdx = useSelectorTyped((state) => state.steps.currentIdx);
   const [swiperInstance, setSwiperInstance] = useState<SwiperCore>();
 
   const [currentIdx, setCurrentIdx] = useState(defaultIdx);
+  const [isStrapDefault, setIsStrapDefault] = useState(false);
 
   useEffect(() => {
     if (swiperInstance && stateIdx !== currentIdx) {
       setCurrentIdx(stateIdx);
       swiperInstance.slideTo(stateIdx);
+    }
+
+    if (type === 'STRAP') {
+      if (!productList) return;
+      if (productList[stateIdx] === defaultStrap) {
+        setIsStrapDefault(true);
+      } else {
+        setIsStrapDefault(false);
+      }
     }
   }, [swiperInstance, stateIdx]);
 
@@ -50,6 +61,14 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
 
   const onClickControl = (e: React.MouseEvent): void => {
     if (!(e.currentTarget instanceof HTMLElement)) return;
+    changeSlide();
+  };
+
+  const onClickDefaultStrap = (e: React.MouseEvent): void => {
+    e.preventDefault();
+    if (swiperInstance) {
+      swiperInstance.slideTo(defaultIdx);
+    }
     changeSlide();
   };
 
@@ -107,23 +126,55 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
     );
   };
 
-  const createProductInfo = (sku: string, i: number): JSX.Element => {
-    // let title: string;
-    // let pdUrl: string;
-    // let price: number;
-    // let isOutofStock: boolean;
-    // return <ProductInfo key={i} data={
-    //   title: 'watch + strap'
-    //   pdUrl: ''
-    //   connectivity: ''
-    //   price: {
-    //     original: 120
-    //     save: 20
-    //     total: 100
-    //   }
-    //   isOutofStock: false
-    // } />;
-    return <div></div>;
+  const createProductInfo = (sku: string, i: number): JSX.Element | void => {
+    if (watches === undefined || straps === undefined) return;
+
+    let watchData: WatchType;
+    let strapData: StrapType;
+    let isDefaultStrap: boolean;
+
+    if (type === 'MODEL') {
+      watchData = watches[sku];
+      strapData = straps[watchData.defaultStrap];
+
+      isDefaultStrap = true;
+    } else {
+      if (!selectedWatchObj) return;
+      watchData = selectedWatchObj?.data;
+      strapData = straps[sku];
+
+      isDefaultStrap = sku === watchData.defaultStrap;
+    }
+    const isActive = currentIdx === i;
+    const isWatchOutOfStock = watchData.isOutOfStock;
+    const isStrapOutOfStock = isDefaultStrap ? false : strapData.isOutOfStock;
+    const isOnSale = watchData.price.save + strapData.price.save > 0;
+    const pdUrl = watchData.pdUrl;
+    const connectivity = watchData.connectivity;
+    const connectivities = ['Bluetooth', 'Lte']; // do some calc
+    const watchName = watchData.model;
+    const strapName = strapData.model;
+    const price = {
+      original: watchData.price.original + (isDefaultStrap ? 0 : strapData.price.original),
+      save: watchData.price.save + (isDefaultStrap ? 0 : strapData.price.save),
+      total: watchData.price.total + (isDefaultStrap ? 0 : strapData.price.total),
+    };
+
+    const data = {
+      isActive,
+      isDefaultStrap,
+      isWatchOutOfStock,
+      isStrapOutOfStock,
+      isOnSale,
+      pdUrl,
+      connectivity,
+      connectivities,
+      watchName,
+      strapName,
+      price,
+    };
+
+    return <ProductInfo key={i} data={data} />;
   };
 
   return (
@@ -155,10 +206,15 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
                   <source src="/content/dam/samsung/uk/watches/mix-and-match/intro_vid.mp4" type="video/mp4">
               </video>
           </div> */}
-          {type !== 'MODEL' && (
+          {type === 'STRAP' && (
             <>
               <div className={s['slider__strap-goto']}>
-                <a href="none" role="button" className="el-btn-goto">
+                <a
+                  href="none"
+                  onClick={onClickDefaultStrap}
+                  role="button"
+                  className={s['el-btn-goto'] + (isStrapDefault ? '' : ' is-active')}
+                >
                   Go to default
                 </a>
               </div>
@@ -168,19 +224,17 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
             </>
           )}
         </div>
-        <div className="watch-configurator__product-info">
-          <div className="watch-configurator__product-details">
-            {productList &&
-              productList.map((sku, i) => {
-                return createProductInfo(sku, i);
-              })}
-          </div>
+        <div className={s.slider__product}>
+          {productList &&
+            productList.map((sku, i) => {
+              return createProductInfo(sku, i);
+            })}
         </div>
-        <div className="watch-configurator__cta-buy">
+        <div className={s.slider__cta}>
           <a
             href="none"
             role="button"
-            className="el-cta-pill el-cta-choose js-layer-opener is-async"
+            className={s['el-cta-choose']}
             title="Selection products summary layer"
             data-layer-target="#addto-cart-layer"
           >

@@ -66,7 +66,7 @@ export const App: React.FC = () => {
             .find((step) => step.name === 'STRAP')
             ?.productOrder?.indexOf(defaultStrapSku)
         : null;
-      if (idx) {
+      if (typeof idx === 'number') {
         setDefaultIdx(idx);
         dispatch(changeIndexAndSelectedProduct(idx));
       }
@@ -106,8 +106,6 @@ export const App: React.FC = () => {
               )}
             </>
           )}
-          Step: {stepState.currentStep} <br />
-          Theme: {theme}
         </div>
         <ThemePicker theme={theme} setTheme={setTheme} />
         <div className={s.app__cta}>

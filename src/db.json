@@ -39,7 +39,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "Bluetooth",
-      "productModelName": "SM-R850"
+      "productModelName": "SM-R850",
+      "isOutOfStock": true,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R855FZDAEUA": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r855/SM-R855FZDAEUA",
@@ -80,7 +86,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "4G",
-      "productModelName": "SM-R855"
+      "productModelName": "SM-R855",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R850NZSAEUA": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r850/SM-R850NZSAEUA",
@@ -120,7 +132,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "Bluetooth",
-      "productModelName": "SM-R850"
+      "productModelName": "SM-R850",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R855FZSAEUA": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r855/SM-R855FZSAEUA",
@@ -160,7 +178,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "4G",
-      "productModelName": "SM-R855"
+      "productModelName": "SM-R855",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R840NZKAEUA": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r840/SM-R840NZKAEUA",
@@ -185,7 +209,13 @@
       "defaultStrap": "ET-SLR84LBEGEU",
       "selectableStraps": ["ET-SFR84LBEGEU", "ET-SFR84LJEGEU", "ET-SLR84LAEGEU", "ET-SLR84LBEGEU"],
       "connectivity": "Bluetooth",
-      "productModelName": "SM-R840"
+      "productModelName": "SM-R840",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R845FZKAEUA": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r845/SM-R845FZKAEUA",
@@ -210,7 +240,13 @@
       "defaultStrap": "ET-SLR84LBEGEU",
       "selectableStraps": ["ET-SFR84LBEGEU", "ET-SFR84LJEGEU", "ET-SLR84LAEGEU", "ET-SLR84LBEGEU"],
       "connectivity": "4G",
-      "productModelName": "SM-R845"
+      "productModelName": "SM-R845",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R840NZSAEUA": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r840/SM-R840NZSAEUA",
@@ -235,7 +271,13 @@
       "defaultStrap": "ET-SLR84LBEGEU",
       "selectableStraps": ["ET-SFR84LBEGEU", "ET-SFR84LJEGEU", "ET-SLR84LAEGEU", "ET-SLR84LBEGEU"],
       "connectivity": "Bluetooth",
-      "productModelName": "SM-R840"
+      "productModelName": "SM-R840",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R845FZSAEUA": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r845/SM-R845FZSAEUA",
@@ -260,7 +302,13 @@
       "defaultStrap": "ET-SLR84LBEGEU",
       "selectableStraps": ["ET-SFR84LBEGEU", "ET-SFR84LJEGEU", "ET-SLR84LAEGEU", "ET-SLR84LBEGEU"],
       "connectivity": "4G",
-      "productModelName": "SM-R845"
+      "productModelName": "SM-R845",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R840NTKAEUA": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch3-r840-titanium",
@@ -287,7 +335,13 @@
         "NO-SKU001"
       ],
       "connectivity": "Bluetooth",
-      "productModelName": "SM-R840"
+      "productModelName": "SM-R840",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R830NZDABTU": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-r830/SM-R830NZDABTU",
@@ -319,7 +373,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "Bluetooth",
-      "productModelName": "SM-R830"
+      "productModelName": "SM-R830",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R830NZKABTU": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-r830/SM-R830NZKABTU",
@@ -351,7 +411,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "Bluetooth",
-      "productModelName": "SM-R830"
+      "productModelName": "SM-R830",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R835FSKABTU": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-r835/SM-R835FSKABTU",
@@ -383,7 +449,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "4G",
-      "productModelName": "SM-R835"
+      "productModelName": "SM-R835",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R835FSDABTU": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-r835/SM-R835FSDABTU",
@@ -415,7 +487,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "4G",
-      "productModelName": "SM-R835"
+      "productModelName": "SM-R835",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R820NZDABTU": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2/SM-R820NZDABTU",
@@ -447,7 +525,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "Bluetooth",
-      "productModelName": "SM-R820"
+      "productModelName": "SM-R820",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R820NZKABTU": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2/SM-R820NZKABTU",
@@ -479,7 +563,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "Bluetooth",
-      "productModelName": "SM-R820"
+      "productModelName": "SM-R820",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R825FSKABTU": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-4g/SM-R825FSKABTU",
@@ -511,7 +601,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "4G",
-      "productModelName": "SM-R825"
+      "productModelName": "SM-R825",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     },
     "SM-R825FSDABTU": {
       "pdUrl": "/content/samsung/uk/wearables/galaxy-watch-active2-4g/SM-R825FSDABTU",
@@ -543,7 +639,13 @@
         "ET-SLR82MWEGWW"
       ],
       "connectivity": "4G",
-      "productModelName": "SM-R825"
+      "productModelName": "SM-R825",
+      "isOutOfStock": false,
+      "price": {
+        "original": 200,
+        "save": 20,
+        "total": 180
+      }
     }
   },
   "strapProducts": {
@@ -563,7 +665,13 @@
         },
         "summary": "/assets/summary-bands/ET-SFR84LBEG_Black.png"
       },
-      "productModelName": "ET-SFR84"
+      "productModelName": "ET-SFR84",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SFR85SBEGEU": {
       "category": {
@@ -581,7 +689,13 @@
         },
         "summary": "/assets/summary-bands/ET-SFR85SBEG_Black.png"
       },
-      "productModelName": "ET-SFR85"
+      "productModelName": "ET-SFR85",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SFR84LJEGEU": {
       "category": {
@@ -599,7 +713,13 @@
         },
         "summary": "/assets/summary-bands/ET-SFR84LJEG_Gray.png"
       },
-      "productModelName": "ET-SFR84"
+      "productModelName": "ET-SFR84",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SFR85SJEGEU": {
       "category": {
@@ -617,7 +737,13 @@
         },
         "summary": "/assets/summary-bands/ET-SFR85SJEG_Gray.png"
       },
-      "productModelName": "ET-SFR85"
+      "productModelName": "ET-SFR85",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SFR82MBEGWW": {
       "category": {
@@ -635,7 +761,13 @@
         },
         "summary": "/assets/summary-bands/ET-SFR82MBEG_Black.png"
       },
-      "productModelName": "ET-SFR82"
+      "productModelName": "ET-SFR82",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SFR82MGEGWW": {
       "category": {
@@ -653,7 +785,13 @@
         },
         "summary": "/assets/summary-bands/ET-SFR82MGEG_Green.png"
       },
-      "productModelName": "ET-SFR82"
+      "productModelName": "ET-SFR82",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SFR82MSEGWW": {
       "category": {
@@ -671,7 +809,13 @@
         },
         "summary": "/assets/summary-bands/ET-SFR82MSEG_Silver.png"
       },
-      "productModelName": "ET-SFR82"
+      "productModelName": "ET-SFR82",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SFR82MVEGWW": {
       "category": {
@@ -689,7 +833,13 @@
         },
         "summary": "/assets/summary-bands/ET-SFR82MVEG_Violet.png"
       },
-      "productModelName": "ET-SFR82"
+      "productModelName": "ET-SFR82",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SFR82MPEGWW": {
       "category": {
@@ -707,7 +857,13 @@
         },
         "summary": "/assets/summary-bands/ET-SFR82MPEG_Pink.png"
       },
-      "productModelName": "ET-SFR82"
+      "productModelName": "ET-SFR82",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SLR84LAEGEU": {
       "category": {
@@ -725,7 +881,13 @@
         },
         "summary": "/assets/summary-bands/ET-SLR84LAEG_Brown.png"
       },
-      "productModelName": "ET-SLR84"
+      "productModelName": "ET-SLR84",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SLR85SAEGEU": {
       "category": {
@@ -743,7 +905,13 @@
         },
         "summary": "/assets/summary-bands/ET-SLR85SAEG_Brown.png"
       },
-      "productModelName": "ET-SLR85"
+      "productModelName": "ET-SLR85",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SLR84LBEGEU": {
       "category": {
@@ -761,7 +929,13 @@
         },
         "summary": "/assets/summary-bands/ET-SLR84LBEG_Black.png"
       },
-      "productModelName": "ET-SLR84"
+      "productModelName": "ET-SLR84",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SLR85SBEGEU": {
       "category": {
@@ -779,7 +953,13 @@
         },
         "summary": "/assets/summary-bands/ET-SLR85SBEG_Black.png"
       },
-      "productModelName": "ET-SLR85"
+      "productModelName": "ET-SLR85",
+      "isOutOfStock": true,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SLR82MOEGWW": {
       "category": {
@@ -797,7 +977,13 @@
         },
         "summary": "/assets/summary-bands/ET-SLR82MOEG_Orange.png"
       },
-      "productModelName": "ET-SLR82"
+      "productModelName": "ET-SLR82",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SLR82MBEGWW": {
       "category": {
@@ -815,7 +1001,13 @@
         },
         "summary": "/assets/summary-bands/ET-SLR82MBEG_Black.png"
       },
-      "productModelName": "ET-SLR82"
+      "productModelName": "ET-SLR82",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SLR82MAEGWW": {
       "category": {
@@ -833,7 +1025,13 @@
         },
         "summary": "/assets/summary-bands/ET-SLR82MAEG_Brown.png"
       },
-      "productModelName": "ET-SLR82"
+      "productModelName": "ET-SLR82",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SLR82MPEGWW": {
       "category": {
@@ -851,7 +1049,13 @@
         },
         "summary": "/assets/summary-bands/ET-SLR82MPEG_Pink.png"
       },
-      "productModelName": "ET-SLR82"
+      "productModelName": "ET-SLR82",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "ET-SLR82MWEGWW": {
       "category": {
@@ -869,7 +1073,13 @@
         },
         "summary": "/assets/summary-bands/ET-SLR82MWEG_White.png"
       },
-      "productModelName": "ET-SLR82"
+      "productModelName": "ET-SLR82",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "NO-SKU000": {
       "category": {
@@ -887,7 +1097,13 @@
         },
         "summary": "/assets/summary-bands/NO-SKU000_Pink.png"
       },
-      "productModelName": ""
+      "productModelName": "",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     },
     "NO-SKU001": {
       "category": {
@@ -905,7 +1121,13 @@
         },
         "summary": "/assets/summary-bands/NO-SKU001_Black.png"
       },
-      "productModelName": ""
+      "productModelName": "",
+      "isOutOfStock": false,
+      "price": {
+        "original": 60,
+        "save": 0,
+        "total": 60
+      }
     }
   },
   "watchface": {

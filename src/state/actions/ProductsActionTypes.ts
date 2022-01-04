@@ -25,6 +25,12 @@ export type WatchType = {
   selectableStraps: string[];
   connectivity: string;
   productModelName: string;
+  isOutOfStock: boolean;
+  price: {
+    original: number;
+    save: number;
+    total: number;
+  };
 };
 
 export type StrapType = {
@@ -41,6 +47,12 @@ export type StrapType = {
     summary: string;
   };
   productModelName: string;
+  isOutOfStock: boolean;
+  price: {
+    original: number;
+    save: number;
+    total: number;
+  };
 };
 
 export type ProductsType = {
