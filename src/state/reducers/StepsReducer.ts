@@ -6,6 +6,7 @@ import {
   StepDispatchType,
   StepNameType,
   STEP_CHANGE_IDX,
+  CHANGE_WATCH_PRODUCT_ORDER,
 } from 'state/actions/StepsActionTypes';
 
 interface StepStateType {
@@ -33,10 +34,22 @@ export const reducer: Reducer<StepStateType, StepDispatchType> = (state = initia
             productOrder: action.payload.productOrder,
           };
         } else {
-          return step;
+          return { ...step };
         }
       });
       return { ...state, steps: updatedSteps };
+    case CHANGE_WATCH_PRODUCT_ORDER:
+      const newSteps = state.steps.map((step) => {
+        if (step.name === 'MODEL') {
+          return {
+            ...step,
+            productOrder: action.payload,
+          };
+        } else {
+          return { ...step };
+        }
+      });
+      return { ...state, steps: newSteps };
     case STEP_CHANGE_IDX:
       return { ...state, currentIdx: action.payload };
     default:

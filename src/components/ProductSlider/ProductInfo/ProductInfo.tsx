@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useReduxDispatch } from 'helpers/useReduxDispatch';
+import { changeSelectedWatch } from 'state/actions/ProductsActions';
+import { changeWatchProductOrder } from 'state/actions/StepsActions';
 import s from './ProductInfo.module.scss';
 
 export interface IProps {
   data: {
+    watchSku: string;
     isActive: boolean;
     isDefaultStrap: boolean;
     isWatchOutOfStock: boolean;
@@ -10,7 +14,10 @@ export interface IProps {
     isOnSale: boolean;
     pdUrl: string;
     connectivity: string;
-    connectivities: string[];
+    connectivities: {
+      type: string;
+      sku: string;
+    }[];
     watchName: string;
     strapName: string;
     price: {
@@ -21,7 +28,52 @@ export interface IProps {
   };
 }
 
+const CONNECTIVITYITEMS = ['Bluetooth', '4G'];
+
 export const ProductInfo: React.FC<IProps> = ({ data }) => {
+  const dispatch = useReduxDispatch();
+
+  const [currentWatchSku, setCurrentWatchSku] = useState(data.watchSku);
+
+  const onClickConnectivity = (e: React.MouseEvent): void => {
+    e.preventDefault();
+    if (!(e.currentTarget instanceof HTMLAnchorElement)) return;
+    const targetSku = e.currentTarget.getAttribute('data-watch-sku') as string;
+    dispatch(changeWatchProductOrder(currentWatchSku, targetSku));
+    dispatch(changeSelectedWatch(targetSku));
+    setCurrentWatchSku(targetSku);
+  };
+
+  const createConnectivity = (): (JSX.Element | null)[] => {
+    return CONNECTIVITYITEMS.map((item) => {
+      const inCurrent =
+        data.connectivity === item
+          ? {
+              type: data.connectivity,
+              sku: data.watchSku,
+            }
+          : undefined;
+      const inFamily = data.connectivities.find((connectItem) => connectItem.type === item);
+      const targetItem = inCurrent || inFamily;
+
+      if (!targetItem) return null;
+
+      return (
+        <li key={item} className={data.connectivity === item ? ' is-selected' : ''}>
+          <a
+            href="none"
+            onClick={onClickConnectivity}
+            role="button"
+            title="{titleTxt}"
+            data-watch-sku={targetItem.sku}
+          >
+            {item}
+          </a>
+        </li>
+      );
+    });
+  };
+
   return (
     <div className={s.info}>
       <div
@@ -56,15 +108,7 @@ export const ProductInfo: React.FC<IProps> = ({ data }) => {
           </li>
         </ul>
         <div className={s.info__connectivity}>
-          <ul>
-            {data.connectivities.map((item) => (
-              <li className={data.connectivity === item ? ' is-selected' : ''}>
-                <a href="none" role="button" title="{titleTxt}" data-watch-sku="">
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <ul>{createConnectivity()}</ul>
         </div>
         <div className={s.info__desc}>
           <div className={s.info__name}>

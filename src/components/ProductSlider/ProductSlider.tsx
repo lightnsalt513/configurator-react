@@ -125,18 +125,26 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
 
     let watchData: WatchType;
     let strapData: StrapType;
+
+    let watchSku: string;
     let isDefaultStrap: boolean;
+    let connectivities: {
+      type: string;
+      sku: string;
+    }[] = [];
 
     if (type === 'MODEL') {
       watchData = watches[sku];
       strapData = straps[watchData.defaultStrap];
 
+      watchSku = sku;
       isDefaultStrap = true;
     } else {
       if (!selectedWatchObj) return;
       watchData = selectedWatchObj?.data;
       strapData = straps[sku];
 
+      watchSku = selectedWatchObj.sku;
       isDefaultStrap = sku === watchData.defaultStrap;
     }
     const isActive = currentIdx === i;
@@ -145,7 +153,6 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
     const isOnSale = watchData.price.save + strapData.price.save > 0;
     const pdUrl = watchData.pdUrl;
     const connectivity = watchData.connectivity;
-    const connectivities = ['Bluetooth', 'Lte']; // do some calc
     const watchName = watchData.model;
     const strapName = strapData.model;
     const price = {
@@ -154,7 +161,15 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
       total: watchData.price.total + (isDefaultStrap ? 0 : strapData.price.total),
     };
 
+    watchData.familyByConnectivity.forEach((item) => {
+      connectivities.push({
+        type: watches[item.SKU].connectivity,
+        sku: item.SKU,
+      });
+    });
+
     const data = {
+      watchSku,
       isActive,
       isDefaultStrap,
       isWatchOutOfStock,

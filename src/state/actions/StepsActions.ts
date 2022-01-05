@@ -5,6 +5,8 @@ import {
   STEP_CHANGE,
   STEP_ADD_MENU,
   STEP_CHANGE_IDX,
+  ChangeProductOrderDispatch,
+  CHANGE_WATCH_PRODUCT_ORDER,
 } from './StepsActionTypes';
 import { RootStateType } from 'state/reducers';
 
@@ -106,6 +108,21 @@ export const addStepMenus =
     dispatch({
       type: STEP_ADD_MENU,
       payload: stepObj,
+    });
+  };
+
+export const changeWatchProductOrder =
+  (oldSku: string, sku: string) =>
+  (dispatch: Dispatch<ChangeProductOrderDispatch>, getState: () => RootStateType) => {
+    const state = getState().steps;
+    const productOrder = state.steps.find((step) => step.name === 'MODEL')?.productOrder;
+    if (!productOrder) return;
+    const currentIdx = productOrder?.indexOf(oldSku);
+    const newProductOrder = [...productOrder];
+    newProductOrder[currentIdx] = sku;
+    dispatch({
+      type: CHANGE_WATCH_PRODUCT_ORDER,
+      payload: newProductOrder,
     });
   };
 
