@@ -1,6 +1,7 @@
 @mixin cta-pill {
   display: inline-block;
   background: $colorDefault;
+  border: none;
   border-radius: 99em;
   font-size: 17px;
   font-weight: 700;
@@ -9,13 +10,14 @@
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
+  cursor: pointer;
   transition: background 0.2s;
   &:hover,
   &:focus,
   &:active {
     background-color: #555;
   }
-  &.is-disabled {
+  &:global(.is-disabled) {
     background-color: #8c8c8c;
     cursor: default;
   }

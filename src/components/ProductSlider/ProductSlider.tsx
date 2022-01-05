@@ -8,8 +8,9 @@ import s from './ProductSlider.module.scss';
 import { useSelectorTyped } from 'helpers/useSelectorType';
 import { useReduxDispatch } from 'helpers/useReduxDispatch';
 import { changeIndexAndSelectedProduct } from 'state/actions/MultipleActions';
-import { ProductInfo } from './ProductInfo/ProductInfo';
 import { StrapType, WatchType } from 'state/actions/ProductsActionTypes';
+import { ProductInfo } from './ProductInfo/ProductInfo';
+import { Modal } from 'components/Modal/Modal';
 
 interface IProps {
   type: string;
@@ -30,6 +31,7 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
 
   const [currentIdx, setCurrentIdx] = useState(defaultIdx);
   const [isStrapDefault, setIsStrapDefault] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     if (swiperInstance && stateIdx !== currentIdx) {
@@ -70,6 +72,10 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
       swiperInstance.slideTo(defaultIdx);
     }
     changeSlide();
+  };
+
+  const onCloseModal = (): void => {
+    setModalOpen(false);
   };
 
   const createSlide = (sku: string, i: number): JSX.Element | void => {
@@ -245,10 +251,14 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
             role="button"
             className={s['el-cta-choose']}
             title="Selection products summary layer"
-            data-layer-target="#addto-cart-layer"
+            onClick={(e) => {
+              e.preventDefault();
+              setModalOpen(true);
+            }}
           >
             <span>Buy now</span>
           </a>
+          {modalOpen && <Modal onClose={onCloseModal} />}
         </div>
         <div className={s.slider__control}>
           <div className={s['slider__control-prev']}>
