@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useReduxDispatch } from 'helpers/useReduxDispatch';
 import { changeSelectedWatch } from 'state/actions/ProductsActions';
 import { changeWatchProductOrder } from 'state/actions/StepsActions';
@@ -35,10 +35,14 @@ export const ProductInfo: React.FC<IProps> = ({ data }) => {
 
   const [currentWatchSku, setCurrentWatchSku] = useState(data.watchSku);
 
-  const onClickConnectivity = (e: React.MouseEvent): void => {
+  useEffect(() => {
+    setCurrentWatchSku(data.watchSku);
+  }, [data.watchSku]);
+
+  const onClickConnectivity = (e: React.MouseEvent<HTMLAnchorElement>): void => {
     e.preventDefault();
-    if (!(e.currentTarget instanceof HTMLAnchorElement)) return;
     const targetSku = e.currentTarget.getAttribute('data-watch-sku') as string;
+    if (currentWatchSku === targetSku) return;
     dispatch(changeWatchProductOrder(currentWatchSku, targetSku));
     dispatch(changeSelectedWatch(targetSku));
     setCurrentWatchSku(targetSku);
@@ -147,5 +151,3 @@ export const ProductInfo: React.FC<IProps> = ({ data }) => {
     </div>
   );
 };
-
-export default ProductInfo;
