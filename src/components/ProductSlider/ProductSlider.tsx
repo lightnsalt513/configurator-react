@@ -74,16 +74,12 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
 
   const createSlide = (sku: string, i: number): JSX.Element | void => {
     if (!watches || !straps) return;
-    let watchSku: string = '';
-    let strapSku: string = '';
     let titleTxt: string = '';
     let watchImgUrl: string = '';
     let strapImgUrl: string = '';
 
     if (type === 'MODEL') {
-      watchSku = sku;
-      strapSku = watches[sku].defaultStrap;
-
+      const strapSku = watches[sku].defaultStrap;
       const watchData = watches[sku];
       const watchSize = watchData.size;
       const strapData = straps[strapSku];
@@ -94,17 +90,15 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
       if (!selectedWatchObj) {
         throw Error('Selected Watch data not available');
       }
-      watchSku = selectedWatchObj?.sku;
-      strapSku = sku;
-
+      const strapSku = sku;
       const watchSize = selectedWatchObj?.data.size;
-      const strapData = straps[sku];
+      const strapData = straps[strapSku];
       strapImgUrl = strapData.imgUrl.front[`size${watchSize}`];
       titleTxt = type + ' ' + strapData.productModelName;
     }
 
     return (
-      <SwiperSlide key={i} data-watch={watchSku} data-strap={strapSku} onClick={onClickSlide}>
+      <SwiperSlide key={i} onClick={onClickSlide}>
         {({ isActive }) => {
           return (
             <a
