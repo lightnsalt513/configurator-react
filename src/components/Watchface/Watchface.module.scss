@@ -1,0 +1,136 @@
+@import 'styles/globalvars/globalvars.scss';
+
+$component-name: 'watchface';
+
+.#{$component-name} {
+  $faceItemWidth: 160;
+  $faceItemMaxWidth: 240; // 최소너비의 1.5배
+  $faceItemActiveWidth: 160;
+  $faceItemActiveMaxWidth: 240;
+  $rotateTop: 36%;
+
+  @include absolute-full;
+  min-height: 661px;
+  z-index: 1;
+  &__area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-origin: 50% 0;
+    will-change: transform, opacity;
+  }
+  &__text {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: calc(28 / #{$minHeight} * 100vh);
+    color: #525252;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    pointer-events: none;
+  }
+  &__list {
+    position: absolute;
+    top: $rotateTop;
+    left: 0;
+    right: 0;
+  }
+  ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-origin: center bottom;
+  }
+  li {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    transform-origin: center bottom;
+    &:global(.is-active) {
+      z-index: 1;
+      .el-watchface-item {
+        width: calc(#{$faceItemActiveWidth} / #{$minHeight} * 100vh);
+        min-width: $faceItemActiveWidth + px;
+        max-width: $faceItemActiveMaxWidth + px;
+      }
+    }
+  }
+  &__main {
+    position: absolute;
+    top: $rotateTop;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(#{$faceItemActiveWidth} / #{$minHeight} * 100vh);
+    min-width: $faceItemActiveWidth + px;
+    max-width: $faceItemActiveMaxWidth + px;
+    pointer-events: none;
+    :global(.el-bg-round) {
+      display: flex;
+      align-items: center;
+      @include absolute-full;
+      width: calc((#{$faceItemActiveWidth} + 2) / #{$minHeight} * 100vh);
+      min-width: $faceItemActiveWidth + 2 + px;
+      max-width: $faceItemActiveMaxWidth + 2 + px;
+      margin: auto;
+      &:before {
+        display: block;
+        width: 100%;
+        padding-bottom: 100%;
+        background: #333;
+        border-radius: 50%;
+        content: '';
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      & + img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+    }
+  }
+  .el-watchface-item {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: -200px;
+    right: -200px;
+    width: calc(#{$faceItemWidth} / #{$minHeight} * 100vh);
+    min-width: $faceItemWidth + px;
+    max-width: $faceItemMaxWidth + px;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    transition: width 0.5s, transform 0.5s;
+    &:before {
+      display: block;
+      padding-bottom: 100%;
+      background: #333;
+      border-radius: 50%;
+      opacity: 0.5;
+      content: '';
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+:export {
+  appMinHeightPc: $minHeight;
+}

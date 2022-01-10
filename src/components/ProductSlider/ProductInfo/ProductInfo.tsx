@@ -3,6 +3,7 @@ import { useReduxDispatch } from 'helpers/useReduxDispatch';
 import { changeSelectedWatch } from 'state/actions/ProductsActions';
 import { changeWatchProductOrder } from 'state/actions/StepsActions';
 import s from './ProductInfo.module.scss';
+import { setWatchfaceActive } from 'state/actions/WatchfaceActions';
 
 export interface IProps {
   data: {
@@ -93,6 +94,10 @@ export const ProductInfo: React.FC<IProps> = ({ data }) => {
             <a
               href="none"
               role="button"
+              onClick={(e) => {
+                e.preventDefault();
+                dispatch(setWatchfaceActive());
+              }}
               className={s['el-btn-watchface']}
               data-experience="WATCHFACE"
             >

@@ -4,6 +4,7 @@ import { MainNav } from 'components/MainNav/MainNav';
 import { SubNav } from 'components/SubNav/SubNav';
 import { ProductSlider } from 'components/ProductSlider/ProductSlider';
 import { ThemePicker } from './ThemePicker/ThemePicker';
+import { Watchface } from './Watchface/Watchface';
 import {
   changeSelectedStrap,
   changeSelectedWatch,
@@ -13,6 +14,7 @@ import { useSelectorTyped } from 'helpers/useSelectorType';
 import { useReduxDispatch } from 'helpers/useReduxDispatch';
 import { addStepMenus } from 'state/actions/StepsActions';
 import { changeIndexAndSelectedProduct } from 'state/actions/MultipleActions';
+import { fetchWatchfaces } from 'state/actions/WatchfaceActions';
 
 export interface IState {
   theme: 'color' | 'white' | 'black';
@@ -26,6 +28,7 @@ export const App: React.FC = () => {
 
   const productsState = useSelectorTyped((state) => state.products);
   const stepState = useSelectorTyped((state) => state.steps);
+  const watchfaceActive = useSelectorTyped((state) => state.watchfaces.isActive);
   const modelSliderRef = useRef(null);
 
   const [theme, setTheme] = useState<IState['theme']>('color');
@@ -41,6 +44,7 @@ export const App: React.FC = () => {
       dispatch(changeSelectedWatch(watch));
       dispatch(changeSelectedStrap(strap));
     });
+    dispatch(fetchWatchfaces());
   }, []);
 
   useEffect(() => {
@@ -94,27 +98,33 @@ export const App: React.FC = () => {
           </h1>
         </div>
         <div className={s.app__body}>
-          <MainNav />
-          {productsState.initialized && (
-            <>
-              <SubNav />
-              <div ref={modelSliderRef}>
-                <ProductSlider type="MODEL" defaultIdx={defaultIdx} />
-              </div>
-              {stepState.currentStep === 'STRAP' && isIdxReset && (
-                <ProductSlider type="STRAP" defaultIdx={defaultIdx} />
-              )}
-            </>
-          )}
+          <div className={s.app__content + (watchfaceActive ? ' is-hidden' : '')}>
+            <MainNav />
+            {productsState.initialized && (
+              <>
+                <SubNav />
+                <div ref={modelSliderRef}>
+                  <ProductSlider type="MODEL" defaultIdx={defaultIdx} />
+                </div>
+                {stepState.currentStep === 'STRAP' && isIdxReset && (
+                  <ProductSlider type="STRAP" defaultIdx={defaultIdx} />
+                )}
+              </>
+            )}
+          </div>
+          {productsState.initialized && watchfaceActive && <Watchface />}
         </div>
         <ThemePicker theme={theme} setTheme={setTheme} />
         <div className={s.app__cta}>
-          <a href="none" role="button" className={s['app__cta-back']}>
-            <span className="blind">Go to the previous page</span>
-          </a>
-          <a href="none" role="button" className={s['app__cta-experience-close']}>
-            <span className="blind">Close</span>
-          </a>
+          {watchfaceActive ? (
+            <a href="none" role="button" className={s['app__cta-experience-close']}>
+              <span className="blind">Close</span>
+            </a>
+          ) : (
+            <a href="none" role="button" className={s['app__cta-back']}>
+              <span className="blind">Go to the previous page</span>
+            </a>
+          )}
         </div>
       </div>
     </div>
