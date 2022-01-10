@@ -106,9 +106,12 @@ export const Watchface: React.FC = () => {
     const diameter = selectedWatch.data.watchfaceImgRadius * 2;
     mainImagesRef.current.forEach((imgElem) => {
       if (!imgElem) return;
-      imgElem.style.width = (Number(watchfaceWidth) / s.appMinHeightPc) * 100 + 'vh';
-      imgElem.style.minWidth = (Number(watchfaceMinWidth) * 100) / diameter + 'px';
-      imgElem.style.maxWidth = (Number(watchfaceMaxWidth) * 100) / diameter + 'px';
+      const minWidth = (Number(watchfaceMinWidth) * 100) / diameter;
+      const maxWidth = (Number(watchfaceMaxWidth) * 100) / diameter;
+
+      imgElem.style.minWidth = minWidth + 'px';
+      imgElem.style.maxWidth = maxWidth + 'px';
+      imgElem.style.width = (minWidth / s.appMinHeightPc) * 100 + 'vh';
     });
   };
 
