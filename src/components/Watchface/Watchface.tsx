@@ -3,6 +3,10 @@ import s from './Watchface.module.scss';
 import { useSelectorTyped } from 'helpers/useSelectorType';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
+const SETTINGS = {
+  touchSensitivity: 20,
+};
+
 export const Watchface: React.FC = () => {
   const mainImagesRef = useRef<HTMLDivElement[]>([]);
   const watchfaceListRef = useRef<HTMLUListElement>(null);
@@ -22,6 +26,7 @@ export const Watchface: React.FC = () => {
 
   const currentIdx = useRef(0);
   const cycle = useRef(0);
+  const wheelCount = useRef(0);
   const [currentIndex, setCurrentIndex] = useState(currentIdx.current);
 
   useEffect(() => {
@@ -44,17 +49,30 @@ export const Watchface: React.FC = () => {
       if (!watchfaceList || !targetDegs) return;
       const deltaY = direction ? null : e.deltaY;
       const listLength = watchfaceList.length;
-      const newDirection = direction ? direction : Number(deltaY) < 0 ? 1 : -1;
-      const targetIdx = currentIdx.current + newDirection;
-      const newCycle =
-        targetIdx < 0
-          ? cycle.current - 1
-          : targetIdx >= listLength
-          ? cycle.current + 1
-          : cycle.current;
-      const newIdx = targetIdx < 0 ? listLength - 1 : targetIdx >= listLength ? 0 : targetIdx;
+      let newDirection: number;
 
-      rotateWatchface(newIdx, newCycle);
+      function applyRotateWatchface() {
+        const targetIdx = currentIdx.current + newDirection;
+        const newCycle =
+          targetIdx < 0
+            ? cycle.current - 1
+            : targetIdx >= listLength
+            ? cycle.current + 1
+            : cycle.current;
+        const newIdx = targetIdx < 0 ? listLength - 1 : targetIdx >= listLength ? 0 : targetIdx;
+        rotateWatchface(newIdx, newCycle);
+      }
+      if (deltaY === null || Math.abs(deltaY) > 50) {
+        newDirection = direction ? direction : Number(deltaY) < 0 ? 1 : -1;
+        applyRotateWatchface();
+      } else {
+        wheelCount.current = wheelCount.current + deltaY;
+        if (Math.abs(wheelCount.current) > SETTINGS.touchSensitivity) {
+          newDirection = wheelCount.current < 0 ? 1 : -1;
+          applyRotateWatchface();
+          wheelCount.current = 0;
+        }
+      }
     },
     [currentIndex]
   );
