@@ -13,8 +13,8 @@ $component-name: 'slider';
       width: 50px;
       height: 50px;
       border: 0;
-      // background: url('/assets/ico-loading.png') no-repeat 0 0;
-      // background-size: 100% auto;
+      background: url('/assets/ico-loading.png') no-repeat 0 0;
+      background-size: 100% auto;
     }
     :global(.swiper-slide) {
       width: calc(175 / #{$minHeight} * 100vh);
@@ -75,12 +75,12 @@ $component-name: 'slider';
         //   opacity: 0;
         //   visibility: hidden;
         // }
-        // &.swiper-lazy {
-        //   visibility: hidden;
-        // }
-        // &.swiper-lazy-loaded {
-        //   visibility: visible;
-        // }
+        &.swiper-lazy {
+          visibility: hidden;
+        }
+        &.swiper-lazy-loaded {
+          visibility: visible;
+        }
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           // IE10+ hack
           transform: scale(0.75) translate3d(0, 0, 0.02px);
