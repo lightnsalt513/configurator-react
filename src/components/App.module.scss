@@ -100,12 +100,6 @@ $component-name: 'app';
         transform: rotate(-45deg);
       }
     }
-    &-back {
-      display: none;
-    }
-    &-experience-close {
-      display: none;
-    }
   }
 
   &:global(.is-initialized) {

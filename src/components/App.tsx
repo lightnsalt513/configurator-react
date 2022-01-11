@@ -14,7 +14,7 @@ import { useSelectorTyped } from 'helpers/useSelectorType';
 import { useReduxDispatch } from 'helpers/useReduxDispatch';
 import { addStepMenus } from 'state/actions/StepsActions';
 import { changeIndexAndSelectedProduct } from 'state/actions/MultipleActions';
-import { fetchWatchfaces } from 'state/actions/WatchfaceActions';
+import { fetchWatchfaces, setWatchfaceInactive } from 'state/actions/WatchfaceActions';
 
 export interface IState {
   theme: 'color' | 'white' | 'black';
@@ -81,6 +81,21 @@ export const App: React.FC = () => {
     setIsIdxReset(true);
   }, [stepState.currentStep]);
 
+  const onClickWatchClose = (e: React.MouseEvent): void => {
+    e.preventDefault();
+    dispatch(setWatchfaceInactive());
+  };
+
+  const onClickGoback = (e: React.MouseEvent): void => {
+    e.preventDefault();
+    if (document.referrer === '') {
+      var landingUrl = 'https://www.samsung.com/uk';
+      window.location.href = landingUrl;
+    } else {
+      window.history.back();
+    }
+  };
+
   return (
     <div
       className={
@@ -117,11 +132,16 @@ export const App: React.FC = () => {
         <ThemePicker theme={theme} setTheme={setTheme} />
         <div className={s.app__cta}>
           {watchfaceActive ? (
-            <a href="none" role="button" className={s['app__cta-experience-close']}>
+            <a
+              href="none"
+              role="button"
+              onClick={onClickWatchClose}
+              className={s['app__cta-experience-close']}
+            >
               <span className="blind">Close</span>
             </a>
           ) : (
-            <a href="none" role="button" className={s['app__cta-back']}>
+            <a href="none" role="button" onClick={onClickGoback} className={s['app__cta-back']}>
               <span className="blind">Go to the previous page</span>
             </a>
           )}
