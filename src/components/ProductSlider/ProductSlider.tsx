@@ -28,8 +28,9 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
   const selectedWatchObj = useSelectorTyped((state) => state.products.selectedWatch);
   const defaultStrap = selectedWatchObj?.data.defaultStrap;
   const stateIdx = useSelectorTyped((state) => state.steps.currentIdx);
-  const [swiperInstance, setSwiperInstance] = useState<SwiperCore>();
+  const watchfaceActive = useSelectorTyped((state) => state.watchfaces.isActive);
 
+  const [swiperInstance, setSwiperInstance] = useState<SwiperCore>();
   const [currentIdx, setCurrentIdx] = useState(defaultIdx);
   const [isStrapDefault, setIsStrapDefault] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
@@ -39,7 +40,11 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
     return () => {
       window.removeEventListener('resize', onResize);
     };
-  }, []);
+  }, [swiperInstance]);
+
+  useEffect(() => {
+    onResize();
+  }, [watchfaceActive]);
 
   useEffect(() => {
     if (swiperInstance && stateIdx !== currentIdx) {
@@ -65,11 +70,10 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
   };
 
   const onResize = debounce(() => {
-    if (swiperInstance) {
-      setTimeout(() => {
-        swiperInstance.update();
-      }, 500);
-    }
+    if (!swiperInstance) return;
+    setTimeout(() => {
+      swiperInstance.update();
+    }, 500);
   }, 150);
 
   const onClickSlide = (e: React.MouseEvent): void => {

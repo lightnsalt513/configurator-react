@@ -3,6 +3,7 @@ import s from './Watchface.module.scss';
 import { BREAKPOINTS, MINHEIGHT_PC } from 'constant';
 import { useSelectorTyped } from 'helpers/useSelectorType';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { debounce } from 'helpers/debounce';
 
 const SETTINGS = {
   touchSensitivity: 20,
@@ -28,20 +29,41 @@ export const Watchface: React.FC = () => {
   const currentIdx = useRef(0);
   const cycle = useRef(0);
   const wheelCount = useRef(0);
+  const viewportType = useRef<'PC' | 'MO' | null>(null);
   const [currentIndex, setCurrentIndex] = useState(currentIdx.current);
 
   useEffect(() => {
-    onInit();
+    viewportType.current = window.innerWidth > BREAKPOINTS.MO ? 'PC' : 'MO';
+    setRotateCircleSize();
+    setWatchSize();
 
     window.addEventListener('wheel', onMouseWheel);
+    window.addEventListener('resize', onResize);
     return () => {
       window.removeEventListener('wheel', onMouseWheel);
+      window.removeEventListener('resize', onResize);
     };
   }, []);
 
-  const onInit = (): void => {
-    setWatchSize();
-    setRotateCircleSize();
+  const onResize = debounce(() => {
+    if (window.innerWidth > BREAKPOINTS.MO) {
+      if (viewportType.current !== 'PC') {
+        viewportType.current = 'PC';
+        resetLayout();
+      }
+    } else {
+      if (viewportType.current !== 'MO') {
+        viewportType.current = 'MO';
+        resetLayout();
+      }
+    }
+  }, 150);
+
+  const resetLayout = (): void => {
+    setTimeout(() => {
+      setRotateCircleSize();
+      setWatchSize();
+    }, 500);
   };
 
   const onMouseWheel = useCallback(
@@ -119,32 +141,53 @@ export const Watchface: React.FC = () => {
     const watchface = watchfaceListRef.current?.querySelector('a');
     if (!watchface || !selectedWatch) return;
     const computedStyle = window.getComputedStyle(watchface);
-    const watchfaceWidth = computedStyle.width.replace('px', '');
-    const watchfaceMinWidth = computedStyle.minWidth.replace('px', '');
-    const watchfaceMaxWidth = computedStyle.maxWidth.replace('px', '');
+    const watchfaceWidth = parseInt(computedStyle.width);
+    const watchfaceMinWidth = parseInt(computedStyle.minWidth);
+    const watchfaceMaxWidth = parseInt(computedStyle.maxWidth);
     const diameter = selectedWatch.data.watchfaceImgRadius * 2;
+
+    const minWidth = (watchfaceMinWidth * 100) / diameter;
+    const maxWidth = (watchfaceMaxWidth * 100) / diameter;
+
     mainImagesRef.current.forEach((imgElem) => {
       if (!imgElem) return;
-      const minWidth = (Number(watchfaceMinWidth) * 100) / diameter;
-      const maxWidth = (Number(watchfaceMaxWidth) * 100) / diameter;
-
-      imgElem.style.minWidth = minWidth + 'px';
-      imgElem.style.maxWidth = maxWidth + 'px';
+      if (viewportType.current === 'PC') {
+        imgElem.style.minWidth = minWidth + 'px';
+        imgElem.style.maxWidth = maxWidth + 'px';
         imgElem.style.width = (minWidth / MINHEIGHT_PC) * 100 + 'vh';
+      } else {
+        imgElem.style.minWidth = '';
+        imgElem.style.maxWidth = '';
+        imgElem.style.width = (watchfaceWidth * 100) / diameter + 'px';
+      }
     });
   };
 
   const setRotateCircleSize = (): void => {
     if (!watchfaceListWrapRef.current || !watchfaceListRef.current || !watchfaceList) return;
-    const watchfaceBaseWidth = Number(
-      window
-        .getComputedStyle(watchfaceListRef.current.querySelector('li a') as HTMLElement)
-        .minWidth.replace('px', '')
-    );
-    const edgeLength = watchfaceBaseWidth * 1.55;
-    const watchfaceAreaBaseHeight = Number(
-      window.getComputedStyle(watchfaceAreaRef.current as HTMLElement).minHeight.replace('px', '')
-    );
+    let edgeLength: number;
+    let watchfaceAreaBaseHeight: number;
+    if (viewportType.current === 'PC') {
+      const watchfaceBaseWidth = Number(
+        window
+          .getComputedStyle(watchfaceListRef.current.querySelector('li a') as HTMLElement)
+          .minWidth.replace('px', '')
+      );
+      edgeLength = watchfaceBaseWidth * 1.55;
+      watchfaceAreaBaseHeight = Number(
+        window.getComputedStyle(watchfaceAreaRef.current as HTMLElement).minHeight.replace('px', '')
+      );
+    } else {
+      const watchfaceBaseWidth = Number(
+        window
+          .getComputedStyle(watchfaceListRef.current.querySelector('li a') as HTMLElement)
+          .width.replace('px', '')
+      );
+      edgeLength = watchfaceBaseWidth * 1.37;
+      watchfaceAreaBaseHeight = Number(
+        window.getComputedStyle(watchfaceAreaRef.current as HTMLElement).height.replace('px', '')
+      );
+    }
     const x = Math.PI / watchfaceList?.length;
     const calculatedRadius = edgeLength / Math.sin(x) / 2;
     const radiusInPercentage = (calculatedRadius / watchfaceAreaBaseHeight) * 100;

@@ -25,11 +25,11 @@ export interface IState {
 
 export const App: React.FC = () => {
   const dispatch = useReduxDispatch();
+  const modelSliderRef = useRef(null);
 
   const productsState = useSelectorTyped((state) => state.products);
   const stepState = useSelectorTyped((state) => state.steps);
   const watchfaceActive = useSelectorTyped((state) => state.watchfaces.isActive);
-  const modelSliderRef = useRef(null);
 
   const [theme, setTheme] = useState<IState['theme']>('color');
   const [bg, setBg] = useState<IState['bg']>(['#fff']);
@@ -99,7 +99,9 @@ export const App: React.FC = () => {
   return (
     <div
       className={
-        s.app + (theme !== 'color' ? (theme === 'white' ? ' theme-white' : ' theme-black') : '')
+        s.app +
+        (theme !== 'color' ? (theme === 'white' ? ' theme-white' : ' theme-black') : '') +
+        (watchfaceActive ? ' is-experience-active' : '')
       }
     >
       <div className={s.app__bg}>
