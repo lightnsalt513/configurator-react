@@ -60,3 +60,12 @@ $component-name: 'subnav';
     transition: border-color 0.5s;
   }
 }
+
+// Dark Theme
+:global(.theme-black) {
+  .#{$component-name} {
+    li:global(.is-selected) a {
+      border-color: #fff;
+    }
+  }
+}

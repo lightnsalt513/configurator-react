@@ -3,7 +3,8 @@
 $component-name: 'slider';
 
 .#{$component-name} {
-  display: block;
+  position: relative;
+  margin-top: 34px;
   &__swiper {
     position: relative;
   }
@@ -116,6 +117,12 @@ $component-name: 'slider';
     }
     :global(.swiper-button-prev),
     :global(.swiper-button-next) {
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 46px;
       height: 46px;
       margin-top: -23px;
@@ -175,10 +182,7 @@ $component-name: 'slider';
       height: auto;
       margin: 0 auto;
       backface-visibility: hidden;
-      // &.is-hidden {
-      //     opacity: 0;
-      //     visibility: hidden;
-      // }
+      transform: scale(0.75);
     }
   }
   &__strap-goto {
@@ -221,6 +225,31 @@ $component-name: 'slider';
       padding: 0 27px;
       line-height: 39px;
       @include customFocus;
+    }
+  }
+}
+
+// Dark Theme
+:global(.theme-black) {
+  .#{$component-name} {
+    &__strap-goto {
+      .el-btn-goto {
+        color: #00abf5;
+      }
+    }
+    :global(.swiper-button-next),
+    :global(.swiper-button-prev) {
+      background: rgba(255,255,255,.2);
+      &:global(.swiper-button-disabled):after {
+        opacity: 0.4;
+      }
+    }
+    .el-cta-choose {
+      background: #fff;
+      color: #000;
+      &:hover, &:focus {
+        background: #999;
+      }
     }
   }
 }

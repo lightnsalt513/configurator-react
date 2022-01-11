@@ -49,3 +49,12 @@ $component-name: 'nav';
     box-sizing: border-box;
   }
 }
+
+// Dark Theme
+:global(.theme-black) {
+  .#{$component-name} {
+    &__line-active {
+      background: #fff;
+    }
+  }
+}

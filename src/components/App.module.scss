@@ -119,9 +119,6 @@ $component-name: 'app';
       &__bg {
         display: none;
       }
-      // &__product-connectivity li.is-selected a {
-      //   background: #f6f4f4;
-      // }
     }
   }
 
@@ -131,6 +128,12 @@ $component-name: 'app';
     .#{$component-name} {
       &__bg {
         display: none;
+      }
+      &__cta a {
+        &:before,
+        &:after {
+          background: #989898;
+        }
       }
     }
   }

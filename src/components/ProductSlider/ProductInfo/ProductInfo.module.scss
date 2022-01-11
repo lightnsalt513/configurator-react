@@ -50,6 +50,7 @@ $component-name: 'info';
       font-size: 12px;
       line-height: 15px;
       box-sizing: border-box;
+      text-decoration: none;
     }
   }
   &__connectivity {
@@ -67,9 +68,6 @@ $component-name: 'info';
           pointer-events: none;
         }
       }
-      // &.is-hidden {
-      //   display: none;
-      // }
     }
     a {
       display: block;
@@ -137,7 +135,11 @@ $component-name: 'info';
       font-weight: normal;
     }
     .el-price-original {
+      margin-right: 5px;
       text-decoration: line-through;
+    }
+    .el-price-save-text {
+      margin-right: 5px;
     }
     .el-price-original,
     .el-price-save-text,
@@ -159,5 +161,23 @@ $component-name: 'info';
         content: '* ';
       }
     }
+  }
+}
+
+// Dark Theme
+:global(.theme-black) {
+  .#{$component-name} {
+    &__experience a {
+      color: #00abf5;
+    } 
+  }
+}
+
+// White Theme
+:global(.theme-white) {
+  .#{$component-name} {
+    &__connectivity li:global(.is-selected) a {
+      background: #f6f4f4;
+    } 
   }
 }

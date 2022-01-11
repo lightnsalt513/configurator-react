@@ -131,6 +131,15 @@ $component-name: 'watchface';
   }
 }
 
+// Dark Theme
+:global(.theme-black) {
+  .#{$component-name} {
+    &__text {
+      color: #989898
+    }
+  }
+}
+
 :export {
   appMinHeightPc: $minHeight;
 }
