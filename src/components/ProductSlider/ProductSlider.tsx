@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SwiperCore from 'swiper';
-import { Navigation } from 'swiper';
+import { Navigation, Lazy } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/lazy';
@@ -11,6 +11,7 @@ import { changeIndexAndSelectedProduct } from 'state/actions/MultipleActions';
 import { StrapType, WatchType } from 'state/actions/ProductsActionTypes';
 import { ProductInfo } from './ProductInfo/ProductInfo';
 import { Modal } from 'components/Modal/Modal';
+import { debounce } from 'helpers/debounce';
 
 interface IProps {
   type: string;
@@ -34,6 +35,13 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
+    window.addEventListener('resize', onResize);
+    return () => {
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
+
+  useEffect(() => {
     if (swiperInstance && stateIdx !== currentIdx) {
       setCurrentIdx(stateIdx);
       swiperInstance.slideTo(stateIdx);
@@ -55,6 +63,14 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
       dispatch(changeIndexAndSelectedProduct(swiperInstance.activeIndex));
     }
   };
+
+  const onResize = debounce(() => {
+    if (swiperInstance) {
+      setTimeout(() => {
+        swiperInstance.update();
+      }, 500);
+    }
+  }, 150);
 
   const onClickSlide = (e: React.MouseEvent): void => {
     if (!(e.currentTarget instanceof HTMLElement)) return;
@@ -116,8 +132,9 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
               aria-hidden={isActive ? false : true}
             >
               <div className="el-img-product">
-                <img src={strapImgUrl} alt="" />
-                {type === 'MODEL' && <img src={watchImgUrl} alt="" />}
+                <img data-src={strapImgUrl} alt="" className="swiper-lazy" />
+                {type === 'MODEL' && <img data-src={watchImgUrl} alt="" className="swiper-lazy" />}
+                <div className="swiper-lazy-preloader"></div>
               </div>
             </a>
           );
@@ -197,11 +214,16 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
       <div className={s.slider__swiper}>
         <div className={s.slider__swiperarea}>
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Lazy]}
             slidesPerView={'auto'}
             centeredSlides={true}
             watchSlidesProgress={true}
-            updateOnWindowResize={true}
+            preloadImages={false}
+            lazy={{
+              loadPrevNext: true,
+              loadPrevNextAmount: 1,
+              loadOnTransitionStart: true,
+            }}
             initialSlide={defaultIdx}
             speed={700}
             slideToClickedSlide={true}
@@ -209,7 +231,6 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
             onSwiper={(swiper) => {
               setSwiperInstance(swiper);
             }}
-            // onSlideChange={() => console.log('slide change')}
           >
             {productList &&
               productList.map((sku, i) => {
