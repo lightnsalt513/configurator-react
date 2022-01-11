@@ -69,3 +69,23 @@ $component-name: 'subnav';
     }
   }
 }
+
+@include breakpoint(mobile) {
+  .#{$component-name} {
+    margin-top: 16px;
+    height: 24px;
+    li {
+      &:first-child {
+        padding-left: 22px;
+      }
+      &:last-child {
+        padding-right: 22px;
+      }
+    }
+    a {
+      padding: 1px 15px 0;
+      font-size: 12px;
+      line-height: 21px;
+    }
+  }
+}

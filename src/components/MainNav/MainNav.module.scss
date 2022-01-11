@@ -58,3 +58,16 @@ $component-name: 'nav';
     }
   }
 }
+
+@include breakpoint(mobile) {
+  .#{$component-name} {
+    li {
+      margin: 0 13px;
+    }
+    a {
+      padding-bottom: 3px;
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+}

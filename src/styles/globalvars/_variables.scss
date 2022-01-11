@@ -1,3 +1,5 @@
+@import './mixin/responsive';
+
 // Breakpoints
 $screen-xsm: 320px;
 $screen-sm: 768px;
@@ -14,7 +16,11 @@ $fontPrimary: 'Orbitron', arial, sans-serif;
 $fontDefault: 'Roboto', arial, sans-serif;
 
 // Layout
-$minHeight : 720; // 변경 시 js도 수정필요
+$minHeight: 720;
+
+@include breakpoint(mobile) {
+  $minHeight: 572;
+}
 
 // Exports
 :export {

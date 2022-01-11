@@ -161,7 +161,7 @@ export const Watchface: React.FC = () => {
           className={s.watchface__main + ' type-back'}
         >
           <img src={selectedStrap.data.imgUrl.front[`size${selectedSize}`]} alt="" />
-          <span className="el-bg-round"></span>
+          <span className={s['el-bg-round']}></span>
         </div>
         <div ref={watchfaceListWrapRef} className={s.watchface__list}>
           <ul ref={watchfaceListRef}>

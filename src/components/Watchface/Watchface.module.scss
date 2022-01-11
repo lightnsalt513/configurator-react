@@ -71,7 +71,7 @@ $component-name: 'watchface';
     min-width: $faceItemActiveWidth + px;
     max-width: $faceItemActiveMaxWidth + px;
     pointer-events: none;
-    :global(.el-bg-round) {
+    .el-bg-round {
       display: flex;
       align-items: center;
       @include absolute-full;
@@ -136,6 +136,55 @@ $component-name: 'watchface';
   .#{$component-name} {
     &__text {
       color: #989898
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .#{$component-name} {
+    $faceItemWidth : 100;
+    $faceItemActiveWidth : 120;
+    $rotateTop : 46.5%;
+
+    bottom: auto;
+    min-height: 0;
+    height: $minHeight - 45px;
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 425px;
+      bottom: 0;
+      font-size: 9px;
+      line-height: 11px;
+    }
+    &__list {
+      top: $rotateTop;
+    }
+    li {
+      &:global(.is-active) {
+        .el-watchface-item {
+          width: $faceItemActiveWidth + px;
+          min-width: 0;
+          max-width: none;
+        }
+      }
+    }
+    &__main {
+      top: $rotateTop;
+      width: $faceItemActiveWidth + px;
+      min-width: 0;
+      max-width: none;
+      .el-bg-round {
+        width: $faceItemActiveWidth + 2 + px;
+        min-width: 0;
+        max-width: none;
+      }
+    }
+    .el-watchface-item {
+      width: $faceItemWidth + px;
+      min-width: 0;
+      max-width: none;
     }
   }
 }

@@ -21,4 +21,10 @@
     background-color: #8c8c8c;
     cursor: default;
   }
+
+  @include breakpoint(mobile) {
+    font-size: 11px;
+    line-height: 32px;
+  }
 }
+

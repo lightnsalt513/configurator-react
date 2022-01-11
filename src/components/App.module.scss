@@ -39,8 +39,8 @@ $component-name: 'app';
     position: relative;
     z-index: 11;
     height: 30px;
-    margin: 0 50px;
-    padding-top: 20px;
+    margin: 0 26px 0 24px;
+    padding: 10px 0;
   }
   &__title {
     font-family: $fontPrimary;
@@ -133,6 +133,40 @@ $component-name: 'app';
         &:before,
         &:after {
           background: #989898;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .#{$component-name} {
+    &__inner {
+      min-height: $minHeight + px;
+    }
+    &__head {
+      height: 36px;
+    }
+    &__title {
+      font-size: 13px;
+      line-height: 1.32;
+      max-width: calc(100vw - 44px - 40px);
+    }
+    &__body {
+      padding-top: calc((25 / #{$minHeight}) * 100vh);
+      padding-bottom: calc((20 / #{$minHeight}) * 100vh);
+    }
+    &__cta {
+      height: 36px;
+      &-back,
+      &-experience-close {
+        right: -7px;
+        width: 26px;
+        height: 26px;
+        &:before,
+        &:after {
+          top: 6px;
+          height: 12px;
         }
       }
     }

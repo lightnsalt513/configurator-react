@@ -181,3 +181,51 @@ $component-name: 'info';
     } 
   }
 }
+
+@include breakpoint(mobile) {
+  .#{$component-name} {
+    &__experience {
+      li {
+        padding: 0 15px;
+      }
+      a {
+        font-size: 12px;
+        line-height: 1;
+      }
+    }
+    &__connectivity {
+      margin-top: 15px;
+      li {
+        padding: 0 5px;
+      }
+      a {
+        min-width: 85px;
+        padding: 0 10px;
+        font-size: 10px;
+        line-height: 24px;
+      }
+    }
+    &__desc {
+      margin: 16px 40px 0;
+    }
+    &__name {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__prcie {
+      margin-top: 6px;
+      .el-price-wrap {
+        font-size: 16px;
+        line-height: 18px;
+      }
+      .el-price-wrap {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .el-txt-outofstock {
+        margin-left: 2px;
+        font-size: 8px;
+      }
+    }
+  }
+}

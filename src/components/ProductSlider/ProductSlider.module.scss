@@ -253,3 +253,87 @@ $component-name: 'slider';
     }
   }
 }
+
+@include breakpoint(mobile) {
+  .#{$component-name} {
+    margin-top: 23px;
+    &__swiperarea {
+      :global(.swiper-slide) {
+        width: 185px;
+        min-width: 0;
+        max-width: none;
+      }
+      :global(.el-img-product) {
+        height: 300px;
+        min-height: 0;
+        max-height: none;
+        img {
+          width: 300px;
+          min-width: 0;
+          max-width: none;
+          transform: scale(0.73);
+        }
+      }
+    }
+    &__control {
+      &-prev,
+      &-next {
+        height: 300px;
+        min-height: 0;
+        max-height: none;
+      }
+      &-prev {
+        left: 22px;
+      }
+      &-next {
+        right: 22px;
+      }
+      :global(.swiper-button-prev),
+      :global(.swiper-button-next) {
+        top: 100%;
+        width: 25px;
+        height: 25px;
+        margin-top: 22px;
+        &:after {
+          width: 8px;
+          height: 8px;
+          border-width: 1px 1px 0 0;
+        }
+      }
+      :global(.swiper-button-prev) {
+        &:after {
+          margin-right: -4px;
+        }
+      }
+      :global(.swiper-button-next) {
+        &:after {
+          margin-left: -4px;
+        }
+      }
+    }
+    &__strap-watch {
+      img {
+        width: 300px;
+        min-width: 0;
+        max-width: none;
+      }
+    }
+    &__strap-goto {
+      top: calc(6 / #{$minHeight} * 100vh);
+      &:before {
+        min-width: 53px;
+        width: calc(53 / #{$minHeight} * 100vh);
+      }
+      .el-btn-goto {
+        font-size: 10px;
+      } 
+    }
+    &__cta {
+      .el-cta-choose {
+        min-width: 81px;
+        padding: 0 20px;
+        line-height: 32px;
+      }
+    }
+  }
+}
