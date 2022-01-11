@@ -128,17 +128,17 @@ export const Modal: React.FC<IProps> = ({ onClose }) => {
                 <ul>
                   <li className={s['el-summary-item']}>
                     <strong className={s['el-summary-title']}>{watchName}</strong>
-                    <em className={s['el-summary-price']}>{watchPrice}</em>
+                    <em className={s['el-summary-price']}>${watchPrice}</em>
                   </li>
                   {!isDefaultStrap && (
                     <li className={s['el-summary-item']}>
                       <strong className={s['el-summary-title']}>{strapName}</strong>
-                      <em className={s['el-summary-price']}>{strapPrice}</em>
+                      <em className={s['el-summary-price']}>${strapPrice}</em>
                     </li>
                   )}
                   <li className={s['el-summary-total']}>
                     <strong className={s['el-summary-title']}>Total</strong>
-                    <em className={s['el-summary-price']}>{totalPrice}</em>
+                    <em className={s['el-summary-price']}>${totalPrice}</em>
                   </li>
                 </ul>
               </div>

@@ -141,13 +141,13 @@ export const ProductInfo: React.FC<IProps> = ({ data }) => {
           <div className={s.info__price}>
             <div className={s['el-price-wrap']}>
               <div className={s['el-price-info']}>
-                <strong className={s['el-price']}>{data.price.total}</strong>
+                <strong className={s['el-price']}>${data.price.total}</strong>
                 <span className={s['el-txt-outofstock']}>Out of Stock</span>
               </div>
               <div className={s['el-price-detail']}>
-                <span className={s['el-price-original']}>{data.price.original}</span>
+                <span className={s['el-price-original']}>${data.price.original}</span>
                 <span className={s['el-price-save-text']}>Save</span>
-                <span className={s['el-price-save']}>{data.price.save}</span>
+                <span className={s['el-price-save']}>${data.price.save}</span>
               </div>
             </div>
           </div>
