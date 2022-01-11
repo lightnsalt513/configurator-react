@@ -1,5 +1,6 @@
 import gsap, { Power3 } from 'gsap';
 import s from './Watchface.module.scss';
+import { BREAKPOINTS, MINHEIGHT_PC } from 'constant';
 import { useSelectorTyped } from 'helpers/useSelectorType';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
@@ -129,7 +130,7 @@ export const Watchface: React.FC = () => {
 
       imgElem.style.minWidth = minWidth + 'px';
       imgElem.style.maxWidth = maxWidth + 'px';
-      imgElem.style.width = (minWidth / s.appMinHeightPc) * 100 + 'vh';
+        imgElem.style.width = (minWidth / MINHEIGHT_PC) * 100 + 'vh';
     });
   };
 

@@ -25,7 +25,7 @@ $component-name: 'watchface';
     position: fixed;
     left: 0;
     right: 0;
-    bottom: calc(28 / #{$minHeight} * 100vh);
+    bottom: calc(28 / #{map-get($minHeight, pc)} * 100vh);
     color: #525252;
     font-size: 18px;
     line-height: 22px;
@@ -56,7 +56,7 @@ $component-name: 'watchface';
     &:global(.is-active) {
       z-index: 1;
       .el-watchface-item {
-        width: calc(#{$faceItemActiveWidth} / #{$minHeight} * 100vh);
+        width: calc(#{$faceItemActiveWidth} / #{map-get($minHeight, pc)} * 100vh);
         min-width: $faceItemActiveWidth + px;
         max-width: $faceItemActiveMaxWidth + px;
       }
@@ -67,7 +67,7 @@ $component-name: 'watchface';
     top: $rotateTop;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(#{$faceItemActiveWidth} / #{$minHeight} * 100vh);
+    width: calc(#{$faceItemActiveWidth} / #{map-get($minHeight, pc)} * 100vh);
     min-width: $faceItemActiveWidth + px;
     max-width: $faceItemActiveMaxWidth + px;
     pointer-events: none;
@@ -75,7 +75,7 @@ $component-name: 'watchface';
       display: flex;
       align-items: center;
       @include absolute-full;
-      width: calc((#{$faceItemActiveWidth} + 2) / #{$minHeight} * 100vh);
+      width: calc((#{$faceItemActiveWidth} + 2) / #{map-get($minHeight, pc)} * 100vh);
       min-width: $faceItemActiveWidth + 2 + px;
       max-width: $faceItemActiveMaxWidth + 2 + px;
       margin: auto;
@@ -105,7 +105,7 @@ $component-name: 'watchface';
     position: absolute;
     left: -200px;
     right: -200px;
-    width: calc(#{$faceItemWidth} / #{$minHeight} * 100vh);
+    width: calc(#{$faceItemWidth} / #{map-get($minHeight, pc)} * 100vh);
     min-width: $faceItemWidth + px;
     max-width: $faceItemMaxWidth + px;
     margin: 0 auto;
@@ -148,7 +148,7 @@ $component-name: 'watchface';
 
     bottom: auto;
     min-height: 0;
-    height: $minHeight - 45px;
+    height: map-get($minHeight, mo) - 45px;
     &__text {
       display: flex;
       align-items: center;
@@ -187,8 +187,4 @@ $component-name: 'watchface';
       max-width: none;
     }
   }
-}
-
-:export {
-  appMinHeightPc: $minHeight;
 }

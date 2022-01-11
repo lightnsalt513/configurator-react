@@ -17,13 +17,13 @@ $component-name: 'slider';
       background-size: 100% auto;
     }
     :global(.swiper-slide) {
-      width: calc(175 / #{$minHeight} * 100vh);
+      width: calc(175 / #{map-get($minHeight, pc)} * 100vh);
       min-width: 175px;
       max-width: 295px;
       padding: 2px 0;
       transition: width 0.5s, min-width 0.5s, max-width 0.5s;
       // &:global(.swiper-slide-active) {
-      //   width: calc(260 / #{$minHeight} * 100vh);
+      //   width: calc(260 / #{map-get($minHeight, pc)} * 100vh);
       //   min-width: 260px;
       //   max-width: 415px;
       // }
@@ -55,7 +55,7 @@ $component-name: 'slider';
       display: block;
       position: relative;
       width: 100%;
-      height: calc(265 / #{$minHeight} * 100vh);
+      height: calc(265 / #{map-get($minHeight, pc)} * 100vh);
       min-height: 265px;
       max-height: 450px;
       img {
@@ -64,7 +64,7 @@ $component-name: 'slider';
         left: -100px;
         right: -100px;
         bottom: 0;
-        width: calc(265 / #{$minHeight} * 100vh);
+        width: calc(265 / #{map-get($minHeight, pc)} * 100vh);
         min-width: 265px;
         max-width: 450px;
         margin: auto;
@@ -103,7 +103,7 @@ $component-name: 'slider';
     &-next {
       position: absolute;
       top: 0;
-      height: calc(265 / #{$minHeight} * 100vh);
+      height: calc(265 / #{map-get($minHeight, pc)} * 100vh);
       min-height: 265px;
       max-height: 450px;
       padding: 2px 0;
@@ -176,7 +176,7 @@ $component-name: 'slider';
       top: 0;
       left: 0;
       right: 0;
-      width: calc(265 / #{$minHeight} * 100vh);
+      width: calc(265 / #{map-get($minHeight, pc)} * 100vh);
       min-width: 265px;
       max-width: 450px;
       height: auto;
@@ -188,7 +188,7 @@ $component-name: 'slider';
   &__strap-goto {
     display: flex;
     position: absolute;
-    top: calc(5 / #{$minHeight} * 100vh);
+    top: calc(5 / #{map-get($minHeight, pc)} * 100vh);
     left: 50%;
     z-index: 2;
     max-width: 50vw;
@@ -197,7 +197,7 @@ $component-name: 'slider';
       display: inline-block;
       flex: 0 0 auto;
       min-width: 56px;
-      width: calc(56 / #{$minHeight} * 100vh);
+      width: calc(56 / #{map-get($minHeight, pc)} * 100vh);
       content: '';
     }
     .el-btn-goto {
@@ -319,10 +319,10 @@ $component-name: 'slider';
       }
     }
     &__strap-goto {
-      top: calc(6 / #{$minHeight} * 100vh);
+      top: calc(6 / #{map-get($minHeight, mo)} * 100vh);
       &:before {
         min-width: 53px;
-        width: calc(53 / #{$minHeight} * 100vh);
+        width: calc(53 / #{map-get($minHeight, mo)} * 100vh);
       }
       .el-btn-goto {
         font-size: 10px;

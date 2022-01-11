@@ -16,13 +16,7 @@ $fontPrimary: 'Orbitron', arial, sans-serif;
 $fontDefault: 'Roboto', arial, sans-serif;
 
 // Layout
-$minHeight: 720;
-
-@include breakpoint(mobile) {
-  $minHeight: 572;
-}
-
-// Exports
-:export {
-  BREAKPOINT_SM: $screen-sm;
-}
+$minHeight: (
+  pc: 720,
+  mo: 572
+);

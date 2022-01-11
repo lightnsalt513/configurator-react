@@ -5,6 +5,7 @@ $component-name: 'app';
 .#{$component-name} {
   overflow: hidden;
   position: relative;
+  min-height: 100vh;
   background: $backgroundDefault;
   color: $colorDefault;
   &__bg {
@@ -29,8 +30,7 @@ $component-name: 'app';
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-    min-height: $minHeight + px;
+    min-height: map-get($minHeight, pc) + px;
   }
   &__head {
     display: flex;
@@ -54,8 +54,8 @@ $component-name: 'app';
   }
   &__body {
     flex-grow: 1;
-    padding-top: calc((20 / #{$minHeight}) * 100vh);
-    padding-bottom: calc((66 / #{$minHeight}) * 100vh);
+    padding-top: calc((20 / #{map-get($minHeight, pc)}) * 100vh);
+    padding-bottom: calc((66 / #{map-get($minHeight, pc)}) * 100vh);
   }
   &__content {
     display: block;
@@ -142,7 +142,7 @@ $component-name: 'app';
 @include breakpoint(mobile) {
   .#{$component-name} {
     &__inner {
-      min-height: $minHeight + px;
+      min-height: map-get($minHeight, mo) + px;
     }
     &__head {
       height: 36px;
@@ -153,8 +153,8 @@ $component-name: 'app';
       max-width: calc(100vw - 44px - 40px);
     }
     &__body {
-      padding-top: calc((25 / #{$minHeight}) * 100vh);
-      padding-bottom: calc((20 / #{$minHeight}) * 100vh);
+      padding-top: calc((25 / #{map-get($minHeight, mo)}) * 100vh);
+      padding-bottom: calc((20 / #{map-get($minHeight, mo)}) * 100vh);
     }
     &__cta {
       height: 36px;
