@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+<br />
+<br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. [Overview](#overview)
+2. [기술 스택](#techstack)
+3. [주요 개발 스펙](#specification)
 
-## Available Scripts
+<br />
+<br />
 
-In the project directory, you can run:
+## 1. Overview <a id="overview"></a>
+### 1) 프로젝트 개요
+* 기존 jQuery 기반으로 작업해 보았던 프로젝트를 React와 TypeScript를 사용하여 재구현 시도
+* 기존 프로젝트에서 포함되었던 Intro 비디오, 애니메이션, 웹접근성 및 글로벌 확장성 대응 등은 제외하고 데이터 처리에 대한 부분만 집중적으로 작업
+* API 통신 없이 더미 데이터 활용 
+> **Demo URL** : https://lightnsalt513.github.io/configurator-react
 
-### `npm start`
+> **기존 프로젝트 README** : https://github.com/lightnsalt513/configurator-jquery    
+> **기존 프로젝트 Live URL** : https://www.samsung.com/fr/watches/mix-and-match/ 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br />
+<br />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 2. 기술 스택 <a id="techstack"></a>
+### 주요 기술 스택
+  * FE :
+    * `React`
+    * `TypeScript`
+    * `Redux` (State관리)
+    * `SASS`
 
-### `npm test`
+&nbsp;
+### 기타 주요 라이브러리
+  * `redux` / `react-redux` / `redux-thunk`
+  * `swiper`
+  * `gsap`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br />
+<br />
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 3. 주요 개발 스펙 <a id="specification"></a>
+> 기존 프로젝트 스펙과 유사하며 애니메이션, 접근성 등의 요건이 제외됨
+* **메인 화면**:
+  * 각 선택된 밴드의 컬러 코드를 배경색으로 노출
+  * 하단 우측 버튼 클릭 시 배경 Theme 변경
+  * Strap 메뉴에서 '기본밴드'로 이동 가능한 CTA 추가
+  * 우측 'X' 버튼 클릭 시 되돌아가기 기능 구현
+  * 각 상품 가격 밑의 CTA 클릭 시 팝업 노출
+* **Watchface 화면**:
+  * Watchface들이 마우스 휠 이벤트에 따라 회전할 수 있도록 구현
+  * 메인 watch frame 이미지 사이즈 유동적으로 계산하여 노출    
+    (각 상품별 알 사이즈가 다른 watch frame 대응을 위한 스펙)
+  * Watchface의 개수에 따라 각 watchface 간의 간격을 유지할 수 있도록 watchface가 회전하는 원형의 사이즈를 유동적으로 계산하여 구현
