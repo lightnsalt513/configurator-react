@@ -14,9 +14,9 @@
         }
       ],
       "imgUrl": {
-        "front": "/assets/Noblesse_41mm_BT_Bronze_720.png",
-        "frontFrame": "/assets/Noblesse_41mm_BL_Bronze_720_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_41mm_BT_Bronze_720.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_41mm_BL_Bronze_720_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 21.38,
       "size": 41,
@@ -61,9 +61,9 @@
         }
       ],
       "imgUrl": {
-        "front": "/assets/Noblesse_41mm_LTE_Bronze_720.png",
-        "frontFrame": "/assets/Noblesse_41mm_LTE_Bronze_720_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_41mm_LTE_Bronze_720.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_41mm_LTE_Bronze_720_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 21.38,
       "size": 41,
@@ -90,8 +90,8 @@
       "isOutOfStock": false,
       "price": {
         "original": 200,
-        "save": 20,
-        "total": 180
+        "save": 0,
+        "total": 200
       }
     },
     "SM-R850NZSAEUA": {
@@ -108,9 +108,9 @@
         }
       ],
       "imgUrl": {
-        "front": "/assets/Noblesse_41mm_BT_Silver_720.png",
-        "frontFrame": "/assets/Noblesse_41mm_BL_Silver_720_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_41mm_BT_Silver_720.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_41mm_BL_Silver_720_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 21.38,
       "size": 41,
@@ -154,9 +154,9 @@
         }
       ],
       "imgUrl": {
-        "front": "/assets/Noblesse_41mm_LTE_Silver_720.png",
-        "frontFrame": "/assets/Noblesse_41mm_LTE_Silver_720_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_41mm_LTE_Silver_720.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_41mm_LTE_Silver_720_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 21.38,
       "size": 41,
@@ -200,9 +200,9 @@
         }
       ],
       "imgUrl": {
-        "front": "/assets/Noblesse_45mm_BT_Black_720.png",
-        "frontFrame": "/assets/Noblesse_45mm_BL_Black_720_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_45mm_BT_Black_720.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_45mm_BL_Black_720_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 24.17,
       "size": 45,
@@ -231,9 +231,9 @@
         }
       ],
       "imgUrl": {
-        "front": "/assets/Noblesse_45mm_LTE_Black_720.png",
-        "frontFrame": "/assets/Noblesse_45mm_LTE_Black_720_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_45mm_LTE_Black_720.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_45mm_LTE_Black_720_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 24.17,
       "size": 45,
@@ -262,9 +262,9 @@
         }
       ],
       "imgUrl": {
-        "front": "/assets/Noblesse_45mm_BT_Silver_720.png",
-        "frontFrame": "/assets/Noblesse_45mm_BL_Silver_720_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_45mm_BT_Silver_720.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_45mm_BL_Silver_720_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 24.17,
       "size": 45,
@@ -293,9 +293,9 @@
         }
       ],
       "imgUrl": {
-        "front": "/assets/Noblesse_45mm_LTE_Silver_720.png",
-        "frontFrame": "/assets/Noblesse_45mm_LTE_Silver_720_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_45mm_LTE_Silver_720.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_45mm_LTE_Silver_720_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 24.17,
       "size": 45,
@@ -320,9 +320,9 @@
       "isMainView": true,
       "familyByConnectivity": [],
       "imgUrl": {
-        "front": "/assets/Noblesse_45mm_BT_Titanium_720.png",
-        "frontFrame": "/assets/Noblesse_45mm_BL_Titanium_720_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_45mm_BT_Titanium_720.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/Noblesse_45mm_BL_Titanium_720_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 24.17,
       "size": 45,
@@ -353,9 +353,9 @@
       "isMainView": true,
       "familyByConnectivity": [],
       "imgUrl": {
-        "front": "/assets/active2/active2_40_AL_PG_BT.png",
-        "frontFrame": "/assets/active2/active2_40_AL_PG_BT_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_40_AL_PG_BT.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_40_AL_PG_BT_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 22.2,
       "size": 40,
@@ -391,9 +391,9 @@
       "isMainView": true,
       "familyByConnectivity": [],
       "imgUrl": {
-        "front": "/assets/active2/active2_40_AL_AB_BT.png",
-        "frontFrame": "/assets/active2/active2_40_AL_AB_BT_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_40_AL_AB_BT.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_40_AL_AB_BT_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 22.2,
       "size": 40,
@@ -429,9 +429,9 @@
       "isMainView": true,
       "familyByConnectivity": [],
       "imgUrl": {
-        "front": "/assets/active2/active2_40_SL_BL_LTE.png",
-        "frontFrame": "/assets/active2/active2_40_SL_BL_LTE_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_40_SL_BL_LTE.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_40_SL_BL_LTE_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 22.2,
       "size": 40,
@@ -467,9 +467,9 @@
       "isMainView": true,
       "familyByConnectivity": [],
       "imgUrl": {
-        "front": "/assets/active2/active2_40_SL_GL_LTE.png",
-        "frontFrame": "/assets/active2/active2_40_SL_GL_LTE_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_40_SL_GL_LTE.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_40_SL_GL_LTE_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 22.2,
       "size": 40,
@@ -505,9 +505,9 @@
       "isMainView": true,
       "familyByConnectivity": [],
       "imgUrl": {
-        "front": "/assets/active2/active2_44_AL_PG_BT.png",
-        "frontFrame": "/assets/active2/active2_44_AL_PG_BT_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_44_AL_PG_BT.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_44_AL_PG_BT_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 24.6,
       "size": 44,
@@ -543,9 +543,9 @@
       "isMainView": true,
       "familyByConnectivity": [],
       "imgUrl": {
-        "front": "/assets/active2/active2_44_AL_AB_BT.png",
-        "frontFrame": "/assets/active2/active2_44_AL_AB_BT_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_44_AL_AB_BT.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_44_AL_AB_BT_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 24.6,
       "size": 44,
@@ -581,9 +581,9 @@
       "isMainView": true,
       "familyByConnectivity": [],
       "imgUrl": {
-        "front": "/assets/active2/active2_44_SL_BL_LTE.png",
-        "frontFrame": "/assets/active2/active2_44_SL_BL_LTE_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_44_SL_BL_LTE.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_44_SL_BL_LTE_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 24.6,
       "size": 44,
@@ -619,9 +619,9 @@
       "isMainView": true,
       "familyByConnectivity": [],
       "imgUrl": {
-        "front": "/assets/active2/active2_44_SL_GL_LTE.png",
-        "frontFrame": "/assets/active2/active2_44_SL_GL_LTE_frame.png",
-        "charger": "/assets/EP-OR825_001_Front_Black.png"
+        "front": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_44_SL_GL_LTE.png?$ORIGIN_PNG$",
+        "frontFrame": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/active2/active2_44_SL_GL_LTE_frame.png?$ORIGIN_PNG$",
+        "charger": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/EP-OR825_001_Front_Black.png?$ORIGIN_PNG$"
       },
       "watchfaceImgRadius": 24.6,
       "size": 44,
@@ -661,9 +661,9 @@
           "size40": "",
           "size41": "",
           "size44": "",
-          "size45": "/assets/A03_SFR84_22mm_Black_v07_720.png"
+          "size45": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/A03_SFR84_22mm_Black_v07_720.png?$ORIGIN_PNG$"
         },
-        "summary": "/assets/summary-bands/ET-SFR84LBEG_Black.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SFR84LBEG_Black.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SFR84",
       "isOutOfStock": false,
@@ -683,11 +683,11 @@
       "imgUrl": {
         "front": {
           "size40": "",
-          "size41": "/assets/A03_SFR84_20mm_Black_v07_720.png",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/A03_SFR84_20mm_Black_v07_720.png?$ORIGIN_PNG$",
           "size44": "",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SFR85SBEG_Black.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SFR85SBEG_Black.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SFR85",
       "isOutOfStock": false,
@@ -709,9 +709,9 @@
           "size40": "",
           "size41": "",
           "size44": "",
-          "size45": "/assets/A04_SFR84_22mm_Gray_v06_720.png"
+          "size45": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/A04_SFR84_22mm_Gray_v06_720.png?$ORIGIN_PNG$"
         },
-        "summary": "/assets/summary-bands/ET-SFR84LJEG_Gray.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SFR84LJEG_Gray.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SFR84",
       "isOutOfStock": false,
@@ -731,11 +731,11 @@
       "imgUrl": {
         "front": {
           "size40": "",
-          "size41": "/assets/A04_SFR84_20mm_Gray_v06_720.png",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/A04_SFR84_20mm_Gray_v06_720.png?$ORIGIN_PNG$",
           "size44": "",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SFR85SJEG_Gray.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SFR85SJEG_Gray.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SFR85",
       "isOutOfStock": false,
@@ -754,12 +754,12 @@
       "colorCode": ["#dadada"],
       "imgUrl": {
         "front": {
-          "size40": "/assets/ET-SFR82MB_20mm_Black_40mm.png",
-          "size41": "/assets/ET-SFR82MB_20mm_Black_41mm.png",
-          "size44": "/assets/ET-SFR82MB_20mm_Black_44mm.png",
+          "size40": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MB_20mm_Black_40mm.png?$ORIGIN_PNG$",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MB_20mm_Black_41mm.png?$ORIGIN_PNG$",
+          "size44": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MB_20mm_Black_44mm.png?$ORIGIN_PNG$",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SFR82MBEG_Black.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SFR82MBEG_Black.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SFR82",
       "isOutOfStock": false,
@@ -778,12 +778,12 @@
       "colorCode": ["#c5dad2"],
       "imgUrl": {
         "front": {
-          "size40": "/assets/ET-SFR82MG_20mm_Green_40mm.png",
-          "size41": "/assets/ET-SFR82MG_20mm_Green_41mm.png",
-          "size44": "/assets/ET-SFR82MG_20mm_Green_44mm.png",
+          "size40": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MG_20mm_Green_40mm.png?$ORIGIN_PNG$",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MG_20mm_Green_41mm.png?$ORIGIN_PNG$",
+          "size44": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MG_20mm_Green_44mm.png?$ORIGIN_PNG$",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SFR82MGEG_Green.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SFR82MGEG_Green.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SFR82",
       "isOutOfStock": false,
@@ -802,12 +802,12 @@
       "colorCode": ["#e2dfe6"],
       "imgUrl": {
         "front": {
-          "size40": "/assets/ET-SFR82MS_20mm_Silver_40mm.png",
-          "size41": "/assets/ET-SFR82MS_20mm_Silver_41mm.png",
-          "size44": "/assets/ET-SFR82MS_20mm_Silver_44mm.png",
+          "size40": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MS_20mm_Silver_40mm.png?$ORIGIN_PNG$",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MS_20mm_Silver_41mm.png?$ORIGIN_PNG$",
+          "size44": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MS_20mm_Silver_44mm.png?$ORIGIN_PNG$",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SFR82MSEG_Silver.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SFR82MSEG_Silver.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SFR82",
       "isOutOfStock": false,
@@ -826,12 +826,12 @@
       "colorCode": ["#dad4e1"],
       "imgUrl": {
         "front": {
-          "size40": "/assets/ET-SFR82MV_20mm_Violet_40mm.png",
-          "size41": "/assets/ET-SFR82MV_20mm_Violet_41mm.png",
-          "size44": "/assets/ET-SFR82MV_20mm_Violet_44mm.png",
+          "size40": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MV_20mm_Violet_40mm.png?$ORIGIN_PNG$",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MV_20mm_Violet_41mm.png?$ORIGIN_PNG$",
+          "size44": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MV_20mm_Violet_44mm.png?$ORIGIN_PNG$",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SFR82MVEG_Violet.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SFR82MVEG_Violet.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SFR82",
       "isOutOfStock": false,
@@ -850,12 +850,12 @@
       "colorCode": ["#f7dee4"],
       "imgUrl": {
         "front": {
-          "size40": "/assets/ET-SFR82MP_20mm_Pink_40mm.png",
-          "size41": "/assets/ET-SFR82MP_20mm_Pink_41mm.png",
-          "size44": "/assets/ET-SFR82MP_20mm_Pink_44mm.png",
+          "size40": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MP_20mm_Pink_40mm.png?$ORIGIN_PNG$",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MP_20mm_Pink_41mm.png?$ORIGIN_PNG$",
+          "size44": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SFR82MP_20mm_Pink_44mm.png?$ORIGIN_PNG$",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SFR82MPEG_Pink.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SFR82MPEG_Pink.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SFR82",
       "isOutOfStock": false,
@@ -877,9 +877,9 @@
           "size40": "",
           "size41": "",
           "size44": "",
-          "size45": "/assets/A02_SLR84_22mm_N_brown_v03_720.png"
+          "size45": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/A02_SLR84_22mm_N_brown_v03_720.png?$ORIGIN_PNG$"
         },
-        "summary": "/assets/summary-bands/ET-SLR84LAEG_Brown.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SLR84LAEG_Brown.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SLR84",
       "isOutOfStock": false,
@@ -899,11 +899,11 @@
       "imgUrl": {
         "front": {
           "size40": "",
-          "size41": "/assets/A02_SLR84_20mm_N_brown_v03_720.png",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/A02_SLR84_20mm_N_brown_v03_720.png?$ORIGIN_PNG$",
           "size44": "",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SLR85SAEG_Brown.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SLR85SAEG_Brown.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SLR85",
       "isOutOfStock": false,
@@ -925,9 +925,9 @@
           "size40": "",
           "size41": "",
           "size44": "",
-          "size45": "/assets/A01_SLR84_22mm_black_v06_720.png"
+          "size45": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/A01_SLR84_22mm_black_v06_720.png?$ORIGIN_PNG$"
         },
-        "summary": "/assets/summary-bands/ET-SLR84LBEG_Black.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SLR84LBEG_Black.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SLR84",
       "isOutOfStock": false,
@@ -947,11 +947,11 @@
       "imgUrl": {
         "front": {
           "size40": "",
-          "size41": "/assets/A01_SLR84_20mm_black_v06_720.png",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/A01_SLR84_20mm_black_v06_720.png?$ORIGIN_PNG$",
           "size44": "",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SLR85SBEG_Black.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SLR85SBEG_Black.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SLR85",
       "isOutOfStock": true,
@@ -970,12 +970,12 @@
       "colorCode": ["#ffddd5"],
       "imgUrl": {
         "front": {
-          "size40": "/assets/ET-SLR82MO_20mm_Orange_40mm.png",
-          "size41": "/assets/ET-SLR82MO_20mm_Orange_41mm.png",
-          "size44": "/assets/ET-SLR82MO_20mm_Orange_44mm.png",
+          "size40": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MO_20mm_Orange_40mm.png?$ORIGIN_PNG$",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MO_20mm_Orange_41mm.png?$ORIGIN_PNG$",
+          "size44": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MO_20mm_Orange_44mm.png?$ORIGIN_PNG$",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SLR82MOEG_Orange.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SLR82MOEG_Orange.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SLR82",
       "isOutOfStock": false,
@@ -994,12 +994,12 @@
       "colorCode": ["#dadada"],
       "imgUrl": {
         "front": {
-          "size40": "/assets/ET-SLR82MB_20mm_Black_40mm.png",
-          "size41": "/assets/ET-SLR82MB_20mm_Black_41mm.png",
-          "size44": "/assets/ET-SLR82MB_20mm_Black_44mm.png",
+          "size40": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MB_20mm_Black_40mm.png?$ORIGIN_PNG$",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MB_20mm_Black_41mm.png?$ORIGIN_PNG$",
+          "size44": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MB_20mm_Black_44mm.png?$ORIGIN_PNG$",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SLR82MBEG_Black.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SLR82MBEG_Black.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SLR82",
       "isOutOfStock": false,
@@ -1018,12 +1018,12 @@
       "colorCode": ["#fbd3b3"],
       "imgUrl": {
         "front": {
-          "size40": "/assets/ET-SLR82MA_20mm_Brown_40mm.png",
-          "size41": "/assets/ET-SLR82MA_20mm_Brown_41mm.png",
-          "size44": "/assets/ET-SLR82MA_20mm_Brown_44mm.png",
+          "size40": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MA_20mm_Brown_40mm.png?$ORIGIN_PNG$",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MA_20mm_Brown_41mm.png?$ORIGIN_PNG$",
+          "size44": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MA_20mm_Brown_44mm.png?$ORIGIN_PNG$",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SLR82MAEG_Brown.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SLR82MAEG_Brown.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SLR82",
       "isOutOfStock": false,
@@ -1042,12 +1042,12 @@
       "colorCode": ["#f7dee4"],
       "imgUrl": {
         "front": {
-          "size40": "/assets/ET-SLR82MP_20mm_Pink_40mm.png",
-          "size41": "/assets/ET-SLR82MP_20mm_Pink_41mm.png",
-          "size44": "/assets/ET-SLR82MP_20mm_Pink_44mm.png",
+          "size40": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MP_20mm_Pink_40mm.png?$ORIGIN_PNG$",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MP_20mm_Pink_41mm.png?$ORIGIN_PNG$",
+          "size44": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MP_20mm_Pink_44mm.png?$ORIGIN_PNG$",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SLR82MPEG_Pink.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SLR82MPEG_Pink.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SLR82",
       "isOutOfStock": false,
@@ -1066,12 +1066,12 @@
       "colorCode": ["#ffffff"],
       "imgUrl": {
         "front": {
-          "size40": "/assets/ET-SLR82MW_20mm_White_40mm.png",
-          "size41": "/assets/ET-SLR82MW_20mm_White_41mm.png",
-          "size44": "/assets/ET-SLR82MW_20mm_White_44mm.png",
+          "size40": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MW_20mm_White_40mm.png?$ORIGIN_PNG$",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MW_20mm_White_41mm.png?$ORIGIN_PNG$",
+          "size44": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/ET-SLR82MW_20mm_White_44mm.png?$ORIGIN_PNG$",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/ET-SLR82MWEG_White.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/ET-SLR82MWEG_White.png?$ORIGIN_PNG$"
       },
       "productModelName": "ET-SLR82",
       "isOutOfStock": false,
@@ -1091,11 +1091,11 @@
       "imgUrl": {
         "front": {
           "size40": "",
-          "size41": "/assets/A02_SLR84_20mm_brown_v02_720.png",
+          "size41": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/A02_SLR84_20mm_brown_v02_720.png?$ORIGIN_PNG$",
           "size44": "",
           "size45": ""
         },
-        "summary": "/assets/summary-bands/NO-SKU000_Pink.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/NO-SKU000_Pink.png?$ORIGIN_PNG$"
       },
       "productModelName": "",
       "isOutOfStock": false,
@@ -1117,9 +1117,9 @@
           "size40": "",
           "size41": "",
           "size44": "",
-          "size45": "/assets/F01_Titanium_Metal_22mm_v01_720.png"
+          "size45": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/F01_Titanium_Metal_22mm_v01_720.png?$ORIGIN_PNG$"
         },
-        "summary": "/assets/summary-bands/NO-SKU001_Black.png"
+        "summary": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/summary-bands/NO-SKU001_Black.png?$ORIGIN_PNG$"
       },
       "productModelName": "",
       "isOutOfStock": false,
@@ -1133,161 +1133,161 @@
   "watchface": {
     "galaxy watch3": [
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_Acentric.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_Acentric.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand, date and steps are presented in red and gray with dark gray background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_activity_sparkles.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_activity_sparkles.png?$ORIGIN_PNG$",
         "imgAlt": "The date and time are presented in green and white with sparkling black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_analog_dashboard.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_analog_dashboard.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand, weather and battery are presented in blue and white and step icon presented in green with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_analog_utility.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_analog_utility.png?$ORIGIN_PNG$",
         "imgAlt": "The date, weather, hour hand, minute hand and steps are presented in yellow and white with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_Basic_dashboard.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_Basic_dashboard.png?$ORIGIN_PNG$",
         "imgAlt": "The time, weather, battery level and number of steps are presented in white with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_breathe.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_breathe.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand and minute hand are presented in white and sky blue with active breathe background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_Casual_minimalist.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_Casual_minimalist.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand and minute hand are presented in dark gray and yellow with black background that has bpm in it."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_Classic_adventurer.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_Classic_adventurer.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand and numbers are presented in white and date is presented in black with black background that has steps icon in it."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_digital_dashboard.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_digital_dashboard.png?$ORIGIN_PNG$",
         "imgAlt": "The date, time, and weather are presented in pink and white with black background that has big pink ring which indicates battery level, steps and time."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_large.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_large.png?$ORIGIN_PNG$",
         "imgAlt": "The date, time and battery level are presented in white with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_live_wallpaper.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_live_wallpaper.png?$ORIGIN_PNG$",
         "imgAlt": "The date and time are presented in white with live wall paper background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_Modern_minimalist.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_Modern_minimalist.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand and battery level are presented in rose gold and white with black background effect that has bpm in it."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_myday.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_myday.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, the minute hand, date and battery level are presented in white and red, with black background effect"
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_myphoto.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_myphoto.png?$ORIGIN_PNG$",
         "imgAlt": "The time is presented in white with big wall paper background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_mystyle.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_mystyle.png?$ORIGIN_PNG$",
         "imgAlt": "The time is presented in white with yellow and white circles are placed in black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_Quad_hive.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_Quad_hive.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand, date, battery level, weather, steps, and messages are presented in white and yellow with dark gray background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_Roaming_clock.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_Roaming_clock.png?$ORIGIN_PNG$",
         "imgAlt": "The time and date are presented in blue and the location is presented in white with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3_weather_center.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3_weather_center.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand, weather and location are presented in white with dribbling water style effect in purple background."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3MR_frontier.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3MR_frontier.png?$ORIGIN_PNG$",
         "imgAlt": "The date, minute hand and the hour hand are presented in white and red with dark gray background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3MR_health_dashboard.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3MR_health_dashboard.png?$ORIGIN_PNG$",
         "imgAlt": "The date, time, and weather are presented in white and bpm presented in blue, and moderate presented in purple with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3MR_neon_digital.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3MR_neon_digital.png?$ORIGIN_PNG$",
         "imgAlt": "The date, time, weather and steps are presented in yellow and white with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3MR_pixel_heart.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3MR_pixel_heart.png?$ORIGIN_PNG$",
         "imgAlt": "The time and bpm are presented in white with black background that has big pixel heart in it."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3MR_premium_analog.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3MR_premium_analog.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand, date, bpm, location, and stopwatch are presented in white and red with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch3MR_simple_analog.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch3MR_simple_analog.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand and weather are presented in white and red and bpm presented in gray with black background effect."
       }
     ],
     "galaxy watch active2": [
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_activity_sparkles.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_activity_sparkles.png?$ORIGIN_PNG$",
         "imgAlt": "The date and time are presented in green and white with sparkling black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_dashboard.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_dashboard.png?$ORIGIN_PNG$",
         "imgAlt": "The date, time, location, steps, weather and battery level are presented in white with black background effect"
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_digital_neon.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_digital_neon.png?$ORIGIN_PNG$",
         "imgAlt": "The date, time, weather and steps are presented in yellow and white with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_frontier.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_frontier.png?$ORIGIN_PNG$",
         "imgAlt": "The date, the minute hand and the hour hand are presented in white and red with dark gray background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_health_dashboard.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_health_dashboard.png?$ORIGIN_PNG$",
         "imgAlt": "The date, time, and weather are presented in white and bpm presented in blue, and moderate presented in purple with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_large.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_large.png?$ORIGIN_PNG$",
         "imgAlt": "The date, time and battery level are presented in white with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_livewallpaper.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_livewallpaper.png?$ORIGIN_PNG$",
         "imgAlt": "The date and time are presented in white with big flower wall paper in black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_myday.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_myday.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, the minute hand, date and battery level are presented in white and red, with black background effect"
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_mystyle.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_mystyle.png?$ORIGIN_PNG$",
         "imgAlt": "The time is presented in white with yellow and white circles are placed in black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_mystyle_expired.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_mystyle_expired.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand and minute hand are presented in white with pink gradation background."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_pixel_heart.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_pixel_heart.png?$ORIGIN_PNG$",
         "imgAlt": "The time and bpm are presented in white with black background that has big pixel heart in it."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_premium_analog.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_premium_analog.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand, date, bpm, location, and stopwatch are presented in white and red with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_Roaming_clock.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_Roaming_clock.png?$ORIGIN_PNG$",
         "imgAlt": "The time and date are presented in blue and the location is presented in white with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_simple_analog.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_simple_analog.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand and weather are presented in white and red and bpm presented in gray with black background effect."
       },
       {
-        "imgUrl": "/assets/watchface/galaxy_watch_active2_simple_basic_2.png",
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p5/fr/watches/mix-and-match/watchface/galaxy_watch_active2_simple_basic_2.png?$ORIGIN_PNG$",
         "imgAlt": "The hour hand, minute hand and weather are presented in white and red with black background effect."
       }
     ]
