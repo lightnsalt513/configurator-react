@@ -3,7 +3,6 @@
 $component-name: 'modal';
 
 .#{$component-name} {
-  // display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -217,9 +216,6 @@ $component-name: 'modal';
       }
       &__input:disabled .cm-checkbox__label {
         cursor: default;
-        .s-box {
-          // border-color: #dadada;
-        }
       }
     }
   }

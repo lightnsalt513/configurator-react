@@ -17,9 +17,6 @@ export const SubNav: React.FC = () => {
 
   useEffect(() => {
     menus = steps.find((step) => step.name === currentStep)?.menus;
-    return () => {
-      // cleanup;
-    };
   }, [currentStep, steps]);
 
   useEffect(() => {

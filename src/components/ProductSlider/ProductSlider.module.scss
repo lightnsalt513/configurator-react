@@ -22,26 +22,10 @@ $component-name: 'slider';
       max-width: 295px;
       padding: 2px 0;
       transition: width 0.5s, min-width 0.5s, max-width 0.5s;
-      // &:global(.swiper-slide-active) {
-      //   width: calc(260 / #{map-get($minHeight, pc)} * 100vh);
-      //   min-width: 260px;
-      //   max-width: 415px;
-      // }
       a {
         display: block;
         color: #000;
       }
-      // :global(.is-active) {
-      //   // cursor: default;
-      // }
-      // &.is-have-transition {
-      //   transition: width 0.5s, min-width 0.5s, max-width 0.5s;
-      // }
-      // &.is-slide-active-end {
-      //   .el-img-product img {
-      //     transform: scale(1);
-      //   }
-      // }
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         // IE10+ hack
         transform: translate3d(0, 0, 0.02px);
@@ -71,10 +55,6 @@ $component-name: 'slider';
         transform: scale(0.75);
         transition: transform 0.6s;
         will-change: transform;
-        // &.is-hidden {
-        //   opacity: 0;
-        //   visibility: hidden;
-        // }
         &.swiper-lazy {
           visibility: hidden;
         }
@@ -98,7 +78,6 @@ $component-name: 'slider';
     }
   }
   &__control {
-    // opacity: 0;
     &-prev,
     &-next {
       position: absolute;
@@ -107,7 +86,6 @@ $component-name: 'slider';
       min-height: 265px;
       max-height: 450px;
       padding: 2px 0;
-      // opacity: 0;
     }
     &-prev {
       left: 50px;
@@ -213,12 +191,10 @@ $component-name: 'slider';
   &__product {
     position: relative;
     margin-top: 34px;
-    // opacity: 0;
   }
   &__cta {
     margin-top: 18px;
     text-align: center;
-    // opacity: 0;
     .el-cta-choose {
       @include cta-pill;
       min-width: 124px;

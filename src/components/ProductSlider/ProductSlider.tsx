@@ -241,11 +241,6 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
                 return createSlide(sku, i);
               })}
           </Swiper>
-          {/* <div className="watch-configurator__watch-intro">
-              <video id="watch-config-loader" muted playsinline poster="/etc/designs/smg/global/imgs/blank.png">
-                  <source src="/content/dam/samsung/uk/watches/mix-and-match/intro_vid.mp4" type="video/mp4">
-              </video>
-          </div> */}
           {type === 'STRAP' && (
             <>
               <div className={s['slider__strap-goto']}>

@@ -5,7 +5,6 @@ $component-name: 'nav';
 .#{$component-name} {
   display: flex;
   justify-content: center;
-  // opacity: 0;
   &__inner {
     position: relative;
   }

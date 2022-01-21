@@ -6,7 +6,6 @@ $component-name: 'subnav';
   position: relative;
   margin-top: 20px;
   height: 40px;
-  // opacity: 0;
   ul {
     overflow-x: auto;
     position: absolute;
@@ -15,8 +14,6 @@ $component-name: 'subnav';
     right: 0;
     display: flex;
     margin: -2px 0;
-    // opacity: 0;
-    // visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
     scrollbar-width: none; // IE
     -ms-overflow-style: none; // FF
