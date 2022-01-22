@@ -76,16 +76,6 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
     }, 500);
   }, 150);
 
-  const onClickSlide = (e: React.MouseEvent): void => {
-    if (!(e.currentTarget instanceof HTMLElement)) return;
-    changeSlide();
-  };
-
-  const onClickControl = (e: React.MouseEvent): void => {
-    if (!(e.currentTarget instanceof HTMLElement)) return;
-    changeSlide();
-  };
-
   const onClickDefaultStrap = (e: React.MouseEvent): void => {
     e.preventDefault();
     if (swiperInstance) {
@@ -124,7 +114,7 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
     }
 
     return (
-      <SwiperSlide key={i} onClick={onClickSlide}>
+      <SwiperSlide key={i}>
         {({ isActive }) => {
           return (
             <a
@@ -232,6 +222,9 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
             speed={700}
             slideToClickedSlide={true}
             navigation={{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }}
+            onSlideChange={() => {
+              changeSlide();
+            }}
             onSwiper={(swiper) => {
               setSwiperInstance(swiper);
             }}
@@ -282,10 +275,10 @@ export const ProductSlider: React.FC<IProps> = ({ type, defaultIdx }) => {
         </div>
         <div className={s.slider__control}>
           <div className={s['slider__control-prev']}>
-            <div className="swiper-button-prev" onClick={onClickControl}></div>
+            <div className="swiper-button-prev" onClick={changeSlide}></div>
           </div>
           <div className={s['slider__control-next']}>
-            <div className="swiper-button-next" onClick={onClickControl}></div>
+            <div className="swiper-button-next" onClick={changeSlide}></div>
           </div>
         </div>
       </div>
