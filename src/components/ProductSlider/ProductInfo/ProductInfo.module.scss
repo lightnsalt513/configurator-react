@@ -91,6 +91,9 @@ $component-name: 'info';
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
+    .el-name-connect {
+      margin: 0 4px;
+    }
     .el-name-watch,
     .el-name-strap {
       display: inline-block;
@@ -105,6 +108,7 @@ $component-name: 'info';
     }
     .el-name-basic {
       display: none;
+      margin-right: 4px;
     }
     .el-name-strap {
       &:global(.is-default) {
