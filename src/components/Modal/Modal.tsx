@@ -38,9 +38,8 @@ export const Modal: React.FC<IProps> = ({ onClose }) => {
     straps[watchData.defaultStrap].imgUrl.front[`size${watchData.size}`],
     watchData.imgUrl.charger,
   ];
-  let watchPrice = watchChecked && !isWatchOutOfStock ? watchData.price.total : null;
-  let strapPrice =
-    strapChecked && !isDefaultStrap && !isStrapOutOfStock ? strapData.price.total : null;
+  let watchPrice = watchChecked ? watchData.price.total : 0;
+  let strapPrice = strapChecked && !isDefaultStrap ? strapData.price.total : 0;
   let totalPrice = (watchPrice || 0) + (strapPrice || 0);
 
   const onChangeCheckbox = (e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -54,6 +53,13 @@ export const Modal: React.FC<IProps> = ({ onClose }) => {
   const onClickClose = (e: React.MouseEvent<HTMLButtonElement>): void => {
     e.preventDefault();
     onClose();
+  };
+
+  const checkButtonDisabled = (): boolean => {
+    const watchDisable = isWatchOutOfStock && watchChecked;
+    const strapDisable = isStrapOutOfStock && strapChecked;
+    const bothUnchecked = !watchChecked && !strapChecked;
+    return watchDisable || strapDisable || bothUnchecked;
   };
 
   return ReactDOM.createPortal(
@@ -78,31 +84,29 @@ export const Modal: React.FC<IProps> = ({ onClose }) => {
                         <img key={i} src={img} alt="" />
                       ))}
                     </div>
-                    {!isWatchOutOfStock && (
-                      <div className={s['cm-checkbox']}>
-                        <input
-                          type="checkbox"
-                          id="check_watch"
-                          name="check_watch"
-                          className={s['cm-checkbox__input']}
-                          onChange={onChangeCheckbox}
-                          checked={watchChecked}
-                        />
-                        <label htmlFor="check_watch" className={s['cm-checkbox__label']}>
-                          <span className={s['s-box']}></span>
-                          <span className={s['s-label']}>{watchName}</span>
-                        </label>
-                      </div>
-                    )}
+                    <div className={s['cm-checkbox']}>
+                      <input
+                        type="checkbox"
+                        id="check_watch"
+                        name="check_watch"
+                        className={s['cm-checkbox__input']}
+                        onChange={onChangeCheckbox}
+                        checked={watchChecked}
+                      />
+                      <label htmlFor="check_watch" className={s['cm-checkbox__label']}>
+                        <span className={s['s-box']}></span>
+                        <span className={s['s-label']}>{watchName}</span>
+                      </label>
+                    </div>
                   </div>
-                  {!isWatchOutOfStock && <p className={s['el-product-title']}>Main Package</p>}
+                  <p className={s['el-product-title']}>Main Package</p>
                 </div>
                 <div className={s['modal__product-item']}>
                   <div className={s['el-product']}>
                     <div className={s['el-product-image']}>
                       {!isDefaultStrap && <img src={mainStrapImg} alt="" />}
                     </div>
-                    {!isDefaultStrap && !isStrapOutOfStock && (
+                    {!isDefaultStrap && (
                       <div className={s['cm-checkbox']}>
                         <input
                           type="checkbox"
@@ -119,9 +123,7 @@ export const Modal: React.FC<IProps> = ({ onClose }) => {
                       </div>
                     )}
                   </div>
-                  {!isDefaultStrap && !isStrapOutOfStock && (
-                    <p className={s['el-product-title']}>{strapName}</p>
-                  )}
+                  {!isDefaultStrap && <p className={s['el-product-title']}>{strapName}</p>}
                 </div>
               </div>
               <div className={s.modal__summary}>
@@ -144,9 +146,9 @@ export const Modal: React.FC<IProps> = ({ onClose }) => {
               </div>
               <div className={s.modal__cta}>
                 <button
-                  className={s['el-cta-pill'] + (totalPrice ? '' : ' is-disabled')}
+                  className={s['el-cta-pill'] + (checkButtonDisabled() ? ' is-disabled' : '')}
                   title="Go to the shopping cart page"
-                  disabled={Boolean(totalPrice)}
+                  disabled={checkButtonDisabled()}
                 >
                   <span>Add to basket</span>
                 </button>
