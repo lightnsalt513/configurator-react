@@ -183,12 +183,12 @@ export const Watchface: React.FC = () => {
           .getComputedStyle(watchfaceListRef.current.querySelector('li a') as HTMLElement)
           .width.replace('px', '')
       );
-      edgeLength = watchfaceBaseWidth * 1.37;
+      edgeLength = watchfaceBaseWidth * 1.53; // 기존 1.37
       watchfaceAreaBaseHeight = Number(
         window.getComputedStyle(watchfaceAreaRef.current as HTMLElement).height.replace('px', '')
       );
     }
-    const x = Math.PI / watchfaceList?.length;
+    const x = Math.PI / watchfaceList.length;
     const calculatedRadius = edgeLength / Math.sin(x) / 2;
     const radiusInPercentage = (calculatedRadius / watchfaceAreaBaseHeight) * 100;
 
