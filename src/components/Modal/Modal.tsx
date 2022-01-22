@@ -58,7 +58,7 @@ export const Modal: React.FC<IProps> = ({ onClose }) => {
   const checkButtonDisabled = (): boolean => {
     const watchDisable = isWatchOutOfStock && watchChecked;
     const strapDisable = isStrapOutOfStock && strapChecked;
-    const bothUnchecked = !watchChecked && !strapChecked;
+    const bothUnchecked = !watchChecked && (isDefaultStrap || !strapChecked);
     return watchDisable || strapDisable || bothUnchecked;
   };
 
