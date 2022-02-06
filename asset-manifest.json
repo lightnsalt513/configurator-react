@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.734e2ea2.css",
+    "main.js": "/static/js/main.e7abc93d.js",
+    "static/media/ico-loading.png": "/static/media/ico-loading.a60301cd90aadee5f650.png",
+    "index.html": "/index.html",
+    "static/media/svg-ico-plus.svg": "/static/media/svg-ico-plus.df709570e0e52e616305.svg",
+    "static/media/ico-new-gnb-close-mo.svg": "/static/media/ico-new-gnb-close-mo.ce093546b7c17bf631e5.svg",
+    "main.734e2ea2.css.map": "/static/css/main.734e2ea2.css.map",
+    "main.e7abc93d.js.map": "/static/js/main.e7abc93d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.734e2ea2.css",
+    "static/js/main.e7abc93d.js"
+  ]
+}
